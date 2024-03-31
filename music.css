@@ -7,38 +7,35 @@
     background-color: grey;
 }
 
-#top {
+.topmid {
     position: relative;
     top: 0;
     left: 0;
-    height: 10vh;
     width: 100%;
     box-sizing: border-box;
-    background-color: red;
     border: 1px solid black;
 }
 
+#top {
+    height: 10vh;
+    background-color: #998053;
+}
+
 #mid {
-    position: relative;
     display: block;
-    top: 0;
-    left: 0;
     height: 84vh;
-    width: 100%;
-    box-sizing: border-box;
     background-color: skyblue;
-    border: 1px solid black;
 }
 
 #bottom {
     position: fixed;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     bottom: 0;
     left: 0;
     height: 6vh;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     border-top: 1px solid black;
     box-sizing: border-box;
     background-color: green;
@@ -48,7 +45,7 @@
 #left {
     position: relative;
     top: 0;
-    float: left;
+    left: 0;
     height: 100%;
     width: 15vw;
     border: 1px solid black;
@@ -56,34 +53,68 @@
     background-color: #ffff33;
 }
 
+.leftbox {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+
+}
+
+#leftbox1 {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightcoral;
+    padding: 15px;
+}
+
+#leftbox2 {
+    background-color: lightslategray;
+}
+
+.left1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    width: 90%;
+    min-height: fit-content;
+    min-width: fit-content;
+    box-sizing: border-box;
+    margin: auto;
+    border: 1px solid black;
+    background-color: #b00b69;
+}
+
 #main::-webkit-scrollbar {
     display: none;
 }
 
+.mainright {
+    top: 0;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
 #main {
     position: absolute;
-    top: 0;
     left: 15vw;
-    box-sizing: border-box;
-    height: 100%;
     width: 70vw;
-    border: 1px solid black;
-    background-color: pink;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    padding: 0 0 13vh 0;
     background-color: blueviolet;
 }
 
 #right {
     position: relative;
-    top: 0;
     float: right;
-    box-sizing: border-box;
-    height: 100%;
     width: 15vw;
-    border: 1px solid black;
     background-color: blue;
 }
 
@@ -95,9 +126,67 @@
     width: 100%;
     border: 1px solid black;
     box-sizing: border-box;
+    background-color: khaki;
 }
 
 #row1 {
-    height: 10vh;
-    background-color: khaki;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+#row2 {
+    height: fit-content;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    top: 1.5vh;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 25px 12px 25px;
+    margin-bottom: 15px;
+    background-color: rgb(80, 90, 40);
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.content {
+    display: relative;
+    height: fit-content;
+    text-indent: 2em;
+    width: 85%;
+    padding: 18px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: rgb(202, 84, 84);
+    margin-top: 2vw;
+}
+
+.picframe {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: forestgreen;
+}
+
+.pic {
+    height: 100%;
+    width: calc(100% / 5);
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+#img1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
 }
