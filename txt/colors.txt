@@ -1,0 +1,29 @@
+font                    #0E0E0E
+link                    #A7DC44
+link (visited)          #668FAE
+link (hover)            #78B900
+link (click)
+
+
+box background color    #005862
+box border              #5AB1BB
+
+
+
+
+
+
+
+
+
+font                    #982649
+link                    #F6F740  
+link (visited)          #FAC16A
+link (hover)            #112775
+link (click)            #21295C
+
+
+box background color    #FF7E9E
+box border              #982649
+
+"Tiffany blue"          #63C7B2

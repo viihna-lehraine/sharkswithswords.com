@@ -1,0 +1,116 @@
+body {
+    font-family: Courier New, sans-serif;
+    font-weight: bold;
+    color: #DCDCDD;
+    background-image: url("./assets/bg1.png");
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #1985A1;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#main, #home, #sitemap, #games, #music, #coolskeletons { 
+    display: flex;
+    font-size: 1.75em;
+    border-radius: 75px;
+    background: linear-gradient(#FFFFFF 5%, #9C1616);
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 1.5px #20003D;
+}
+
+#main, #games, #music, #coolskeletons {
+    border: 5px solid #20003D;
+}
+
+#home, #sitemap, #games, #music, #coolskeletons {
+    position: absolute;
+}
+
+#home, #sitemap {
+    top: 59vh;
+    height: 50px;
+    width: 145px;
+    border: 3px solid #20003D;
+    z-index: 2;
+}
+
+#games, #music, #coolskeletons {
+    height: 120px;
+    width: 200px;
+}
+
+#main {
+    font-size: 2em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 375px;
+    margin: 0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#home {
+    left: 38vw;
+}
+
+#sitemap {
+    left: 52.5vw;
+}
+
+#games {
+    top: 68vh;
+    left: 8vw;
+
+}
+
+#music {
+    top: 3vh;
+    left: 43vw;
+}
+
+#coolskeletons {
+    top: 68vh;
+    left: 76vw;
+    text-align: center;
+}
+
+#footer {
+    position: fixed;
+    font-size: 0.85em;
+    border: 3px solid #20003D;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    background-color: #FF7E9E;
+    height: 34px;
+    width: 100vw;
+    border-radius: 0;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+/*
+#20003D		Russian Violet
+#9C1616		Carmine
+#DCDCDD		Platinum
+#1985A1		Blue (Munsell)
+*/

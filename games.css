@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "RetroGaming";
+    src: url("./assets/fonts/retro_gaming/Retro Gaming.ttf") format('truetype');
+}
+
+body {
+    font-family: RetroGaming;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    background-image: url("./assets/reflection.jpg");
+
+}
+
+#top {
+    position: relative;
+    display: flex;
+    height: 175px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#left {
+    position: relative;
+    float: left;
+    display: flex;
+    height: 500px;
+    width: 48%;
+    align-items: center;
+    justify-content: center;
+    border: solid #04BCAF;
+    border-width: 5px 5px 5px 0;
+}
+
+#right {
+    position: relative;
+    float: right;
+    display: flex;
+    height: 500px;
+    width: 48%;
+    align-items: center;
+    justify-content: center;
+    border: solid #04BCAF;
+    border-width: 5px 0 5px 5px;
+}
+
+#bottom {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    height: 35px;
+    width: 100vw;
+    border: 3px solid #DC9BEF;
+    background-color: #8FECF8;
+}
+
+#topbox {
+    position: relative;
+    font-weight: bold;
+    height: 140px;
+    width: 30%;
+    border: 5px inset #04BCAF;
+    background-color: #8FECF8;
+}
+
+#topboxS1 {
+    position: relative;
+    display: flex;
+    font-size: 1.8em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 65%;
+    width: 100%;
+    background-color: #8FECF8;
+}
+
+#topboxS2 {
+    position: relative;
+    display: flex;
+    float: left;
+    font-size: 1.25em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 26.5%;
+    width: 47.5%;
+    background-color: #DC9BEF;
+    border: 5px inset #FB1470;
+}
+
+#topboxS3 {
+    position: relative;
+    display: flex;
+    float: right;
+    font-size: 1.25em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 26.5%;
+    width: 47.5%;
+    background-color: #DC9BEF;
+    border: 5px inset #FB1470;
+}
+
+#leftbox {
+    position: relative;
+    display: flex;
+    height: 175px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    border: 5px outset #04BCAF;
+    background-color: #04BCAF;
+}
+
+#rightbox {
+    position: relative;
+    display: flex;
+    height: 175px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    border: 5px outset #04BCAF;
+    background-color: #04BCAF;
+}

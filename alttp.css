@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "ALTTP Reg Font";
+    src: url("./assets/fonts/alttp/ReturnofGanon.ttf") format('truetype');
+}
+
+body {
+    font-family: "ALTTP Reg Font", sans-serif;
+}
+
+/*********** root div ***********/
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid red;
+}
+
+/*********** level 1 divs ***********/
+
+#top, #left, #middle, #right, #bottom {
+    border: 1px solid red;
+}
+
+#top, #left, #right, #bottom {
+    position: fixed;
+}
+
+#top, #left, #bottom {
+    display: flex;
+    left: 0;
+}
+
+#left, #right {
+    top: 177px;
+    height: calc(100vh - 175px);
+    background-color: green;
+}
+
+#top {
+    top: 0;
+    height: 175px;
+    width: 100vw;
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: blue;
+}
+
+#left {
+    width: calc(20vw + 1px);
+}
+
+#right {
+    right: 0;
+    width: 20vw;
+}
+
+#middle {
+    position: absolute;
+    top: 176px;
+    left: calc(20vw + 1px);
+    height: calc(100vh - 175px);
+    width: calc(60vw - 4px);
+    overflow: scroll;
+    background-color: grey;
+}
+
+#bottom {
+    bottom: 0;
+    left: 0;
+    height: 35px;
+    width: 100vw;
+    z-index: 2;
+    background-color: orange;
+}
+
+/*********** level 2 divs ***********/
+
+#topbox1, #topbox2, #topbox3, #midbox1 {
+    border: 1px solid red;
+}
+
+#topbox1, #topbox3 {
+    position: relative;
+    display: flex;
+    height: 175px;
+    width: 20%;
+    background: pink;
+}
+
+#topbox2 {
+    position: relative;
+    display: flex;
+    height: 99%;
+    width: 60%;
+    align-items: center;
+}
+
+#midbox1 {
+    position: relative;
+    font-size: 1.35em;
+    top: 50px;
+    height: 900px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    padding: 20px 50px 50px 50px;
+    background-color: skyblue;
+}
+
+/*********** level 3 divs ***********/
+
+#bannerleft, #banner, #bannerright {
+    position: relative;
+    height: 100%;
+    border: 1px solid red;
+}
+
+#bannerleft {
+    width: calc(25% - 2px);
+    background-color: black;
+}
+
+#banner {
+    width: calc(50% - 2px);
+    background-color: purple;
+}
+
+#bannerright {
+    width: calc(25% - 1px);
+    background-color: black;
+}
+
+/***********              ***********/
+
+#mb1h1 {
+    text-align: center;
+}

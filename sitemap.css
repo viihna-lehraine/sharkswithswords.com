@@ -1,0 +1,73 @@
+body {
+    font-family: Courier New, sans-serif;
+    font-weight: bold;
+    color: #0E0E0E;
+}
+  
+a:link {
+    color: #A7DC44;
+}
+
+a:visited {
+    color: #668FAE;
+}
+  
+a:hover {
+    color: #78B900;
+    cursor: url("./assets/gam945.gif"), auto;
+}
+
+-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: url("./assets/space.gif");
+    background-repeat: repeat;
+    cursor: url("./assets/gam942.gif"), auto;
+}
+
+.sitemapbox {
+    position: fixed;
+    background-color: #005862;
+    border: solid 4px #5AB1BB;
+    border-radius: 15px 15px 15px 15px;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.titletext {
+    border-bottom: solid 3px #5AB1BB;
+    height: 30px;
+    width: 100%;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.bottombar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #005862;
+    height: 34px;
+    width: 100vw;
+    border: solid 3px #5AB1BB;
+    border-radius: 0;
+    border-bottom: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.center {
+    display: flex;
+    font-size: 0.75em;
+    justify-content: space-between;
+    text-align: center;
+}

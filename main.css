@@ -1,0 +1,225 @@
+body {
+    font-family: Courier New, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    color: #982649;
+    background-image: url("./assets/cutesharks2.jpg");
+    background-repeat: repeat;
+    cursor: url("./assets/gam942.gif"), auto;
+}
+  
+a:link {
+    color: #F6F740;
+}
+
+a:visited {
+    color: #FAC16A;
+}
+  
+a:hover {
+    color: #112775;
+    cursor: url("./assets/gam945.gif"), auto;
+}
+
+.boxmain::-webkit-scrollbar {
+    display: none; 
+}
+
+.boxtop {
+    position: relative;
+    background-image: url("./assets/hangingstars.gif");
+    background-repeat: repeat-x;
+    top: -9px;
+    left: 0;
+    height: 55px;
+    width: 100vw;
+}
+
+.bbox {
+    background-color: #FF7E9E;
+    border: solid 4px #982649;
+    border-radius: 15px;
+}
+
+.boxleft {
+    position: absolute;
+    top: 48px;
+    left: 30px;
+    height: 575px;
+    width: 250px;
+    padding: 12px;
+}
+
+.navbartop {
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 210px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.navbarmain {
+    position: relative;
+    top: 8px;
+    left: 0;
+    height: 0;
+    height: 500px;
+    width: 210px;
+    margin: auto;
+    padding: 15px;
+}
+
+.nav1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-sizing: border-box;
+    border-bottom: 3px solid #982649;
+}
+
+.nav2 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+}
+
+.navtitle {
+    font-size: 1.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.navtext {
+    font-size: 1.5em;
+}
+
+.boxmain {
+    position: absolute;
+    top: 60px;
+    left: 350px;
+    height: 575px;
+    width: 800px;
+    margin: 15px;
+    padding: 10px 25px 25px 25px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+.mainbox {
+    position: relative;
+    text-align: left;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mainbox1 {
+    height: 400px;
+    width: 700px;
+}
+
+.mainbox2 {
+    height: 200px;
+    width: 700px;
+}
+
+.counterbox {
+    position: absolute;
+    top: 100px;
+    left: 1200px;
+    height: 90px;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+}
+
+.guestbox {
+    position: absolute;
+    top: 230px;
+    left: 1200px;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+}
+
+.center {
+    display: flex;
+    font-size: 0.75em;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.bottombar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #FF7E9E;
+    height: 34px;
+    width: 100vw;
+    border: solid 3px #982649;
+    border-radius: 0;
+    border-bottom: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.botright-box {
+    position: absolute;
+    top: 620px;
+    right: 10px;
+    height: auto;
+    width: auto;
+}
+
+.botright-box img {
+    position: relative !important;
+    float: right;
+}
+
+.skullbox {
+    display: inline-block;
+    position: fixed;
+    top: 160px;
+    left: 295px;
+    height: 520px;
+    width: 125px;
+    background-image: url("./assets/skull.gif");
+    background-repeat: repeat-y;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+#motorcycle {
+    position: absolute;
+    top: 360px;
+    left: 1275px;
+    z-index: 2;
+}

@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Seinfeld";
+    src: url("./assets/fonts/seinfeld-font/GiambattistaduemilleOblique-eMzg.ttf") format("truetype");
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* root div */
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./assets/vw.jpg");
+    background-size: cover;
+}
+
+
+/* level 1 divs */
+.l1-div {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+}
+
+#left {
+    left: 0;
+    width: 20vw;
+}
+
+#main {
+    left: 20vw;
+    width: 60vw;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+#right {
+    left: 80vw;
+    width: 20vw;
+}
+
+#bottom {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    height: 6vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid #1b1c36;
+    background-color: skyblue;
+    z-index: 2;
+}
+
+/* level 2 divs */
+
+.l2-div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100;
+}
+#mainbox1 {
+    height: 14vh;
+    margin: 5vh 0 0 0;
+}
+
+#mainbox2 {
+    height: 81vh;
+}
+
+/* level 3 divs */
+
+#titlebox {
+    position: relative;
+    display: flex;
+    font-family: Seinfeld, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    height: calc(100% - 32px);
+    width: 40%;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    border: 8px solid #1b1c36;
+    border-radius: 20px;
+    text-shadow: 3px 2px #F014D1;
+    box-shadow: 6px 6px #930579;
+}
+
+#linkbox {
+    position: relative;
+    display: flex;
+    font-family: Seinfeld, sans-serif;
+    top: 0;
+    left: 0;
+    height: 7vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textboxA {
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding: 15px;
+}
+
+#emptybox {
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 8vh;
+    width: 100%;
+}
+
+/* level 4 divs */
+.datebox {
+    position: relative;
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 8vh;
+    width: 10vw;
+    margin: auto 2vw auto 2vw;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    border: 5px solid #1B1C36;
+    border-radius: 20px;
+    box-shadow: 6px 6px #930579;
+    text-shadow: 3px 2px #F014D1;
+}
+
+#entrybox1 {
+    position: relative;
+    font-family: Seinfeld, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    height: auto;
+    width: 34vw;
+    margin: auto 0 auto 0;
+    padding: 8px;
+    background-color: skyblue;
+    border: 5px solid #1B1C36;
+    border-radius: 20px;
+    box-shadow: 6px 6px #930579;
+    justify-content: right;
+}
+
+#link {
+    position: relative;
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 5vh;
+    width: 11vw;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    border: 5px solid #1B1C36;
+    border-radius: 20px;
+    box-shadow: 6px 6px #930579;
+    text-shadow: 3px 2px #F014D1;
+}

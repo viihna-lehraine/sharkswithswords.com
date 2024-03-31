@@ -1,0 +1,11 @@
+3/11/24 - 1st version of landing page done. gained some semblance of a clue what I'm doing. Started work on 404 page. 
+
+3/14/24 - Completed very rough version of the main page
+
+3/17/24 - Added my contact email address and public PGP key
+
+3/18/24 - Started adding links to navbar. Created sitemap, main journal page, and 1st journal.
+
+3/20/24 - started visual overhaul, started fixing code on main page and trying to make it modular for rest of site
+
+3/21/24 - finished visual changes on main page. Added visitor counter and guestbook link

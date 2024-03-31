@@ -1,0 +1,33 @@
+.header {
+  margin: 12px 12px 0 12px;
+  border: solid 4px #2C211F;
+  border-radius: 1%;
+  background-color: #09BDBE;
+  margin: 2% 2% 2% 2%;
+}
+
+
+
+
+
+INDEX
+
+#imgtop {
+  width: 80px;
+  height: 80px;
+}
+
+
+
+
+
+/* @font-face {
+    font-family: "PKMN";
+    src: url("./assets/pokemon_classic/Pokemon Classic.ttf") format("truetype");
+       }
+
+* {
+    font-family: "PKMN";
+}
+
+*/
