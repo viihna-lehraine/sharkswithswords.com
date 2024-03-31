@@ -4,7 +4,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: grey;
+    background-color: #02020F;
 }
 
 .topmid {
@@ -16,12 +16,12 @@
 }
 
 #top {
-    height: 10vh;
+    height: 5vh;
 }
 
 #mid {
     display: block;
-    height: 84vh;
+    height: 89vh;
 }
 
 #bottom {
@@ -33,7 +33,7 @@
     left: 0;
     height: 6vh;
     width: 100%;
-    border-top: 1px solid black;
+    border-top: 5px solid #313A87;
     box-sizing: border-box;
     background-color: #0ED9F0;
     padding: 0 15px 0 15px;
@@ -42,11 +42,14 @@
 
 #left {
     position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
+    top: 10vh;
+    left: 1vw;
+    height: 65vh;
     width: 15vw;
     box-sizing: border-box;
+    border: 10px solid #313A87;
+    border-style: ridge;
+    border-radius: 8px;
 }
 
 .leftbox {
@@ -54,8 +57,7 @@
     height: 50%;
     width: 100%;
     box-sizing: border-box;
-    background-color: skyblue;
-
+    background-color: #0ED9F0;
 }
 
 #leftbox1 {
@@ -71,14 +73,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 9vh;
-    width: 90%;
+    height: 7vh;
+    width: 70%;
     min-height: fit-content;
     min-width: fit-content;
     box-sizing: border-box;
     margin: auto;
-    border: 1px solid black;
-    background-color: #0ED9F0;
+    border: 5px solid #313A87;
+    border-style: ridge;
+    border-radius: 8px;
+    background-color: #F481C6;
+    color: #040927;
 }
 
 #main::-webkit-scrollbar {
@@ -88,9 +93,9 @@
 #main {
     position: absolute;
     top: 0;
-    left: 15vw;
+    left: 16vw;
     height: 100%;
-    width: 80vw;
+    width: 82vw;
     box-sizing: border-box;
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -115,11 +120,16 @@
     top: 0;
     height: fit-content;
     justify-content: center;
-    padding-bottom: 30px;
 }
 
 #row3 {
     margin: 0 0 20px 0;
+}
+
+#row4 {
+    justify-content: center;
+    height: fit-content;
+    margin-bottom: 1vh;
 }
 
 .title {
@@ -131,10 +141,32 @@
     justify-content: center;
     align-items: center;
     padding: 12px 25px 12px 25px;
-    margin: 0 0 35px 40px;
-    background-color: #0ED9F0;
+    margin: 0 0 15px 0;
+    background-color: #F481C6;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 10px ridge #313A87;
+    border-style: ridge;
+    border-radius: 8px;
+    color: #040927;
+}
+
+.title2 {
+    position: relative;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 25px 12px 25px;
+    margin: 0 0 15px 0;
+    background-color: #F481C6;
+    box-sizing: border-box;
+    border: 5px inset #313A87;
+    border-style: ridge;
+    border-radius: 8px;
+    color: #040927;
 }
 
 .content {
@@ -142,18 +174,21 @@
     height: fit-content;
     text-indent: 2em;
     width: 85%;
-    padding: 18px;
+    padding: 25px;
     border: 1px solid black;
     box-sizing: border-box;
     background-color: #0ED9F0;
     margin: 0 0 100px 0;
+    border: 8px solid #313A87;
+    border-style: ridge;
+    border-radius: 8px;
+    color: #040927;
 }
 
 .picframe {
     display: flex;
-    height: 35vh;
+    height: 40vh;
     width: 100%;
-    border: 1px solid black;
     margin-left: 40px;
     box-sizing: border-box;
 }
@@ -162,7 +197,35 @@
     height: 100%;
     width: calc(100% / 5);
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 5px inset #313A87;
+}
+
+.pic2 {
+    height: 100%;
+    width: calc(100% * (3 / 5));
+    box-sizing: border-box;
+    border: 5px groove #313A87;
+}
+
+.pic3 {
+    height: 100%;
+    width: calc(100% * (2 / 5));
+    box-sizing: border-box;
+    border: 5px groove #313A87;
+}
+
+.pic4 {
+    height: 100%;
+    width: calc(100% * (35 / 100));
+    box-sizing: border-box;
+    border: 5px groove #313A87;
+}
+
+.pic5 {
+    height: 100%;
+    width: calc(100% * (3 / 10));
+    box-sizing: border-box;
+    border: 5px groove #313A87;
 }
 
 #img1 {
@@ -170,4 +233,10 @@
     width: 100%;
     position: relative;
     object-fit: cover;
+}
+
+#img2 {
+    height: 8vh;
+    width: 100%;
+    position: relative;
 }
