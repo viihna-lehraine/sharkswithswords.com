@@ -13,12 +13,12 @@ a {
 
 #cranky {
     position: absolute;
-    top: 1.5vh;
-    right: -0.5vw;
-    height: 150px;
+    top: 3vh;
+    right: 0;
+    height: 20vh;
 }
 
-/* root div */
+/*ROOT*/
 #container {
     position: fixed;
     top: 0;
@@ -28,9 +28,13 @@ a {
     background-image: url("./assets/vw9.jpg");
 }
 
-/* L1 divs */
-#left {
+
+/*L1*/
+.level1 {
     position: fixed;
+}
+
+#left {
     top: 0;
     left: 0;
     height: 100vh;
@@ -38,7 +42,6 @@ a {
 }
 
 #main {
-    position: fixed;
     top: 0;
     left: 25vw;
     height: 100vh;
@@ -46,7 +49,6 @@ a {
 }
 
 #right {
-    position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
@@ -55,7 +57,6 @@ a {
 }
 
 #bottom {
-    position: fixed;
     display: flex;
     bottom: 0;
     left: 0;
@@ -68,57 +69,40 @@ a {
     z-index: 2;
 }
 
-/* L2 divs */
-#left1 {
+/*L2*/
+
+.level2 {
     position: relative;
-    display: flex;
     top: 0;
     left: 0;
-    height: 20vh;
     width: 100%;
+}
+#left1 {
+    display: flex;
+    height: 20vh;
 }
 
 #left2 {
-    position: relative;
-    top: 0;
-    left: 0;
     height: 80vh;
-    width: 100%;
 }
 
 #main1 {
-    position: relative;
     display: flex;
-    top: 0;
-    left: 0;
     height: 20vh;
-    width: 100%;
     justify-content: center;
     align-items: end;
 }
 
 #main2 {
-    position: relative;
-    top: 0;
-    left: 0;
     height: 80vh;
-    width: 100%;
 }
 
 #right1 {
-    position: relative;
-    top: 0;
-    left: 0;
     height: 25vh;
-    width: 100%;
 }
 
 #right2 {
-    position: relative;
-    top: 0;
-    left: 0;
     height: 6vh;
-    width: 100%;
     border-top: 4px solid #47125e;
     border-bottom: 4px solid #47125e;
     border-radius: 5px;
@@ -127,11 +111,7 @@ a {
 }
 
 #right3 {
-    position: relative;
-    top: 0;
-    left: 0;
     height: 2vh;
-    width: 100%;
 }
 
 /* L3 divs */
