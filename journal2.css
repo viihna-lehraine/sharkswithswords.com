@@ -1,0 +1,136 @@
+* {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Courier New, sans-serif;
+    font-weight: bold;
+    color: #0E0E0E;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #A7DC44;
+}
+
+a:visited {
+    color: #668FAE;
+}
+  
+a:hover {
+    color: #78B900;
+    cursor: url("./assets/gam945.gif"), auto;
+}
+
+-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: url("./assets/space.gif");
+    background-repeat: repeat;
+    cursor: url("./assets/gam942.gif"), auto;
+}
+
+.topbar {
+    position: fixed;
+    background-image: url("./assets/hangingstars.gif");
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100vw;
+}
+
+.box {
+    background-color: #005862;
+    border: solid 4px #5AB1BB;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.sidebar {
+    position: fixed;
+    height: 615px;
+    width: 250px;
+    top: 65px;
+    left: 25px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main {
+    position: fixed;
+    height: 75vh;
+    width: 50vw;
+    top: 65px;
+    left: 350px;
+    padding: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 5vh;
+}
+
+.bottombar {
+    position: fixed;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    height: 34px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #005862;
+    border: solid 4px #5AB1BB;
+    border-radius: 0;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.center {
+    display: flex;
+    font-size: 0.75em;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sidebartop {
+    position: relative;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    padding: 15px 0px 0px 0px;
+    margin: auto;
+    border-bottom: solid 3px #5AB1BB;
+    overflow: hidden;
+}
+
+.navtextmain {
+    font-size: 1.75em;
+    text-align: center;
+    margin: auto;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.navtext {
+    font-size: 1.5em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.titletext {
+    position: relative;
+    font-size: 1.6em;
+    text-align: center;
+    top: 0;
+    overflow: hidden;
+}
+
+p {
+    overflow: hidden;
+}

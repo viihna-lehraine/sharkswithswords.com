@@ -83,12 +83,13 @@ a:hover {
     height: 75%;
     width: 100%;
     text-align: center;
+    padding: 0 0 1vw 0;
     margin: auto;
-    overflow: scroll;
+    overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
     box-sizing: border-box;
-    border-bottom: 3px solid #982649;
+    border-bottom: 3px double #540e23;
 }
 
 .nav2 {
@@ -98,7 +99,18 @@ a:hover {
     height: 25%;
     text-align: center;
     margin: auto;
-    padding: 15px;
+    padding: 0 15px 15px 15px;
+}
+
+#scrollNotif {
+    position: relative;
+    display: flex;
+    font-weight: bold;
+    font-size: 0.85em;
+    height: 3vh;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .navtitle {
@@ -138,13 +150,18 @@ a:hover {
 }
 
 .mainbox1 {
-    height: 400px;
-    width: 700px;
+    height: fit-content;
+    width: 46vw;
 }
 
 .mainbox2 {
-    height: 200px;
-    width: 700px;
+    height: fit-content;
+    width: 46vw;
+}
+
+.mainbox3 {
+    height: fit-content;
+    width: 46vw;
 }
 
 .counterbox {
@@ -170,28 +187,33 @@ a:hover {
 .center {
     display: flex;
     font-size: 0.75em;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
 
 .bottombar {
     position: fixed;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
     bottom: 0;
     left: 0;
-    background-color: #FF7E9E;
     height: 34px;
-    width: 100vw;
-    border: solid 3px #982649;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF7E9E;
+    border: solid 4px #982649;
     border-radius: 0;
     border-bottom: none;
     border-right: none;
-    border-bottom: none;
     border-left: none;
 }
 
 .botright-box {
     position: absolute;
-    top: 620px;
+    top: 617px;
     right: 10px;
     height: auto;
     width: auto;

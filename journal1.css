@@ -1,5 +1,5 @@
 * {
-    overflow: scroll;
+    overflow-x: hidden;
 }
 
 body {
@@ -7,7 +7,11 @@ body {
     font-weight: bold;
     color: #0E0E0E;
 }
-  
+ 
+a {
+    text-decoration: none;
+}
+
 a:link {
     color: #A7DC44;
 }
@@ -53,29 +57,37 @@ body {
     top: 65px;
     left: 25px;
     margin: auto;
+    overflow: hidden;
 }
 
 .main {
     position: fixed;
-    height: 585px;
-    width: 800px;
+    height: 75vh;
+    width: 50vw;
     top: 65px;
     left: 350px;
-    padding: 15px;
+    padding: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 5vh;
 }
 
 .bottombar {
     position: fixed;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
     bottom: 0;
     left: 0;
-    background-color: #005862;
     height: 34px;
-    width: 100vw;
-    border: solid 3px #5AB1BB;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #005862;
+    border: solid 4px #5AB1BB;
     border-radius: 0;
     border-bottom: none;
     border-right: none;
-    border-bottom: none;
     border-left: none;
 }
 
@@ -94,6 +106,7 @@ body {
     padding: 15px 0px 0px 0px;
     margin: auto;
     border-bottom: solid 3px #5AB1BB;
+    overflow: hidden;
 }
 
 .navtextmain {
@@ -101,11 +114,13 @@ body {
     text-align: center;
     margin: auto;
     padding-top: 15px;
+    overflow: hidden;
 }
 
 .navtext {
     font-size: 1.5em;
     text-align: center;
+    overflow: hidden;
 }
 
 .titletext {
@@ -113,4 +128,9 @@ body {
     font-size: 1.6em;
     text-align: center;
     top: 0;
+    overflow: hidden;
+}
+
+p {
+    overflow: hidden;
 }

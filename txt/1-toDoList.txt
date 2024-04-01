@@ -1,13 +1,11 @@
 1.  add cyberpunk manifesto to bottom of Manifesto page
-2.  add guitar-playing skeleton on the footer of one or more pages (at leat Manifesto). make it look like he's standing directly on the footer
+2.  reverse the order of changelog posts
 3.  create About Me
     - increase distance between divs on right side
     - find fonts that fucking work
     - explore possibility of using box and text shadows
 5.  create Links Out
-6.  new Journal entry
-7.  add link to Github ROMs repository in Games section
-8.  create main page for Fave Bands / Artists
+8.  create main page for Fave Bands / Artists (almost there? kinda)
 9.  create main page for Rad Entities
 10. add page for LoZ:ALttP in Games section
 11. add privacy/anonymity page/faq/tools section

@@ -31,7 +31,7 @@ h1, .header {
   padding: 2vw;
 }
 
-h1 {
+h1, h2 {
   color: #EFF1F3;
 }
 

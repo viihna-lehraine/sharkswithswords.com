@@ -3,13 +3,17 @@ body {
     font-weight: bold;
     color: #0E0E0E;
 }
-  
+
+a {
+    text-decoration: none
+}
+
 a:link {
     color: #A7DC44;
 }
 
 a:visited {
-    color: #668FAE;
+    color: #630e45;
 }
   
 a:hover {
@@ -63,23 +67,27 @@ body {
 
 .bottombar {
     position: fixed;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
     bottom: 0;
     left: 0;
-    background-color: #005862;
     height: 34px;
-    width: 100vw;
-    border: solid 3px #5AB1BB;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #005862;
+    border: solid 4px #5AB1BB;
     border-radius: 0;
     border-bottom: none;
     border-right: none;
-    border-bottom: none;
     border-left: none;
 }
 
 .center {
     display: flex;
     font-size: 0.75em;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
 

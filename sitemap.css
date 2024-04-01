@@ -5,15 +5,15 @@ body {
 }
   
 a:link {
-    color: #A7DC44;
+    color: #0a1363;
 }
 
 a:visited {
-    color: #668FAE;
+    color: #871b3d;
 }
   
 a:hover {
-    color: #78B900;
+    color: #a8ed27;
     cursor: url("./assets/gam945.gif"), auto;
 }
 
@@ -48,26 +48,4 @@ body {
     width: 100%;
     padding-bottom: 20px;
     justify-content: center;
-}
-
-.bottombar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #005862;
-    height: 34px;
-    width: 100vw;
-    border: solid 3px #5AB1BB;
-    border-radius: 0;
-    border-bottom: none;
-    border-right: none;
-    border-bottom: none;
-    border-left: none;
-}
-
-.center {
-    display: flex;
-    font-size: 0.75em;
-    justify-content: space-between;
-    text-align: center;
 }

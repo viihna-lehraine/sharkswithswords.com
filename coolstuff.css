@@ -95,7 +95,7 @@ a:link {
     font-size: 0.85em;
     border: 3px solid #20003D;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     bottom: 0;
     left: 0;
@@ -104,7 +104,6 @@ a:link {
     width: 100vw;
     border-radius: 0;
     border-right: none;
-    border-bottom: none;
     border-left: none;
 }
 
