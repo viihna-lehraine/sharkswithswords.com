@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Seinfeld";
+    src: url("./assets/fonts/seinfeld-font/GiambattistaduemilleOblique-eMzg.ttf") format("truetype");
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #242767;
+}
+
+a:visited {
+    color: #010b01;
+}
+
+a:hover {
+    color: #670a36;
+}
+
+a:active {
+    color: #9d5d0e;
+}
+
+#container {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: last baseline;
+    background-image: url("./assets/skeleton-guitar.gif");
+    background-repeat: repeat;
+    background-color: #101415;
+}
+
+#back {
+    position: relative;
+    display: flex;
+    font-family: Seinfeld, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 4px 4px #d5d2e2;
+    bottom: 0;
+    height: 8vh;
+    min-height: fit-content;
+    width: 8vw;
+    min-width: fit-content;
+    background-color: #06f00e;
+    border: 5px ridge #a7127b;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.5vh;
+}

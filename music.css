@@ -307,8 +307,9 @@
 
 #img3 {
     height: 16vh;
-    width: 100;
+    width: 100%;
     position: relative;
+    margin-bottom: -5vh;
 }
 
 #img4 {
@@ -326,4 +327,26 @@
     bottom: 8vh;
     height: 80px;
     width: 15.2vw;
+}
+
+#skelefriends {
+    position: relative;
+    font-family: Courier New, sans-serif;
+    font-size: 0.4em;
+    font-weight: bold;
+    display: flex;
+    top: -1vh;
+    margin: 0 auto 0 auto;
+    min-height: fit-content;
+    min-width: fit-content;
+    border: 4px solid #313A87;
+    background-color: #F481C6;
+    border-radius: 8px;
+    box-shadow: 3px 5px rgba(14, 12, 50, 0.984), 9px 12px rgba(6, 89, 17, 0.912);
+}
+
+#cw {
+    font-family: Seinfeld, sans-serif;
+    font-size: 1.4em;
+    text-shadow: 4px 4px #ded9ef;
 }

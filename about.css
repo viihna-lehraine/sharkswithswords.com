@@ -227,6 +227,8 @@ a {
 
 #navbody2 {
     position: relative;
+    display: flex;
+    justify-content: center;
     font-size: 1.3em;
     height: 90%;
     width: calc(100% - 29px);
