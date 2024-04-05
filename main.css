@@ -1,3 +1,7 @@
+*:hover {
+    display: none;
+}
+
 body {
     font-family: Courier New, sans-serif;
     font-weight: bold;
