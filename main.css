@@ -1,15 +1,19 @@
-*:hover {
-    display: none;
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 body {
+    cursor: url("./assets/gam942.gif"), auto;
     font-family: Courier New, sans-serif;
     font-weight: bold;
     position: fixed;
     color: #982649;
     background-image: url("./assets/cutesharks2.jpg");
     background-repeat: repeat;
-    cursor: url("./assets/gam942.gif"), auto;
 }
   
 a:link {
@@ -25,59 +29,158 @@ a:hover {
     cursor: url("./assets/gam945.gif"), auto;
 }
 
-.boxmain::-webkit-scrollbar {
-    display: none; 
-}
-
-.boxtop {
-    position: relative;
-    background-image: url("./assets/hangingstars.gif");
-    background-repeat: repeat-x;
-    top: -9px;
-    left: 0;
-    height: 55px;
-    width: 100vw;
-}
-
 .bbox {
     background-color: #FF7E9E;
     border: solid 4px #982649;
     border-radius: 15px;
 }
 
+.bottombar {
+    position: fixed;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    bottom: 0;
+    left: 0;
+    height: 34px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF7E9E;
+    border-top: solid 4px #982649;
+}
+
+.botright-box {
+    position: absolute;
+    bottom: 5vh;
+    right: 0.25vw;
+    height: auto;
+    width: auto;
+}
+
+.botright-box img {
+    position: relative !important;
+    float: right;
+}
+
+.boxmain::-webkit-scrollbar {
+    display: none; 
+}
+
+.boxmain {
+    position: absolute;
+    top: 7.5vh;
+    left: 23.5vw;
+    height: 90vh;
+    min-height: fit-content;
+    width: 50vw;
+    min-width: fix-content;
+    margin: 15px 15px 0 15px;
+    padding: 10px 25px 0 25px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+.boxtop {
+    position: relative;
+    background-image: url("./assets/hangingstars.gif");
+    background-repeat: repeat-x;
+    top: -1.5vh;
+    left: 0;
+    height: 7.25vh;
+    width: 100vw;
+}
+
 .boxleft {
     position: absolute;
-    top: 48px;
-    left: 30px;
-    height: 575px;
-    width: 250px;
+    top: 8vh;
+    left: 2vw;
+    height: 20vh;
+    min-height: fit-content;
+    width: 10vw;
     padding: 12px;
+}
+
+.center {
+        display: flex;
+        font-size: 0.75em;
+        justify-content: center;
+        text-align: center;
+}
+
+.counterbox {
+    position: absolute;
+    top: 15vh;
+    left: 79vw;
+    height: 12.5vh;
+    min-height: fit-content;
+    width: 13vw;
+    min-width: fit-content;
+    text-align: center;
+    padding: 5px;
+}
+
+.guestbox {
+    position: absolute;
+    top: 35vh;
+    left: 79vw;
+    height: 8vh;
+    min-height: fit-content;
+    width: 13vw;
+    min-width: fit-content;
+    text-align: center;
+    padding: 5px;
+}
+
+.mainbox {
+    position: relative;
+    text-align: left;
+    height: fit-content;
+    width: 46vw;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    margin: 15px 0 15px;
+}
+
+.navbarmain {
+    position: relative;
+    top: 5vh;
+    left: 0;
+    height: 60vh;
+    min-height: fit-content;
+    width: 13.5vw;
+    margin: auto;
+    padding: 15px;
 }
 
 .navbartop {
     position: relative;
     display: flex;
-    top: 0;
+    top: 3vh;
     left: 0;
     align-content: center;
     justify-content: center;
-    text-align: center;
-    height: 50px;
-    width: 210px;
+    height: 7vh;
+    width: 13.5vw;
     margin: auto;
     padding: 15px;
     border-radius: 15px;
 }
 
-.navbarmain {
-    position: relative;
-    top: 8px;
-    left: 0;
-    height: 0;
-    height: 500px;
-    width: 210px;
+.navtext {
+    font-size: 1.5em;
+}
+
+.navtitle {
+    font-size: 1.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    padding: 15px;
 }
 
 .nav1 {
@@ -106,6 +209,36 @@ a:hover {
     padding: 0 15px 15px 15px;
 }
 
+.skullbox {
+    display: inline-block;
+    position: fixed;
+    top: 10vh;
+    left: 18.75vw;;
+    height: 80vh;
+    width: 10vw;
+    background-image: url("./assets/skull.gif");
+    background-repeat: repeat-y;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    z-index: 2;
+}
+
+#empty {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+}
+
+#motorcycle {
+    position: absolute;
+    bottom: 5.5vh;
+    right: 15vw;
+    z-index: 2;
+    height: 31vh;
+}
+
 #scrollNotif {
     position: relative;
     display: flex;
@@ -115,81 +248,6 @@ a:hover {
     width: 100%;
     justify-content: center;
     box-sizing: border-box;
-}
-
-.navtitle {
-    font-size: 1.75em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.navtext {
-    font-size: 1.5em;
-}
-
-.boxmain {
-    position: absolute;
-    top: 60px;
-    left: 350px;
-    height: 575px;
-    width: 800px;
-    margin: 15px;
-    padding: 10px 25px 25px 25px;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-}
-
-.mainbox {
-    position: relative;
-    text-align: left;
-    top: 0;
-    left: 0;
-    padding: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.mainbox1 {
-    height: fit-content;
-    width: 46vw;
-}
-
-.mainbox2 {
-    height: fit-content;
-    width: 46vw;
-}
-
-.mainbox3 {
-    height: fit-content;
-    width: 46vw;
-}
-
-.counterbox {
-    position: absolute;
-    top: 15vh;
-    left: 79vw;
-    height: 12.5vh;
-    min-height: fit-content;
-    width: 13vw;
-    min-width: fit-content;
-    text-align: center;
-    padding: 5px;
-}
-
-.guestbox {
-    position: absolute;
-    top: 35vh;
-    left: 79vw;
-    height: 8vh;
-    min-height: fit-content;
-    width: 13vw;
-    min-width: fit-content;
-    text-align: center;
-    padding: 5px;
 }
 
 #tamanotchi {
@@ -204,67 +262,4 @@ a:hover {
     min-width: fit-content;
     text-align: center;
     padding: 5px;
-}
-
-.center {
-    display: flex;
-    font-size: 0.75em;
-    justify-content: center;
-    text-align: center;
-}
-
-.bottombar {
-    position: fixed;
-    display: flex;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1em;
-    bottom: 0;
-    left: 0;
-    height: 34px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: #FF7E9E;
-    border: solid 4px #982649;
-    border-radius: 0;
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
-}
-
-.botright-box {
-    position: absolute;
-    top: 617px;
-    right: 10px;
-    height: auto;
-    width: auto;
-}
-
-.botright-box img {
-    position: relative !important;
-    float: right;
-}
-
-.skullbox {
-    display: inline-block;
-    position: fixed;
-    top: 160px;
-    left: 295px;
-    height: 520px;
-    width: 125px;
-    background-image: url("./assets/skull.gif");
-    background-repeat: repeat-y;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 2;
-}
-
-#motorcycle {
-    position: absolute;
-    top: 62vh;
-    right: 15vw;
-    z-index: 2;
-    height: 31vh;
 }

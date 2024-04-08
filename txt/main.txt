@@ -1,0 +1,21 @@
+add accessibility shit to links and stuff
+
+do something about this bbox shit
+
+consolidate selectors, id's, and classes
+
+maybe give the bottom bar a contrasting color? make the bottom text more visible
+
+.botright-box img ???
+
+body tag?
+
+--------------------------------------------------------------------------
+
+Root div        #container
+
+Level 1 divs    #boxtop, #boxleft, .skullbox, .boxmain, .counterbox, guestbox, #tamanotchi, .botright-box
+
+Level 2 divs    .navbartop, .navbarnmain, bottombar
+
+Level 3 divs    mainbox, mainbox3, mainbox2, mainbox1,
