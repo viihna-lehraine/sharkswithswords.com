@@ -15,7 +15,11 @@ body {
     background-image: url("./assets/cutesharks2.jpg");
     background-repeat: repeat;
 }
-  
+
+a {
+    text-decoration: none;
+}
+
 a:link {
     color: #F6F740;
 }
@@ -31,24 +35,25 @@ a:hover {
 
 .bbox {
     background-color: #FF7E9E;
-    border: solid 4px #982649;
+    border: solid 6px #982649;
     border-radius: 15px;
 }
 
 .bottombar {
     position: fixed;
     display: flex;
-    font-weight: bold;
-    text-align: center;
     font-size: 1.5em;
+    color: #e0ddeb;
     bottom: 0;
     left: 0;
-    height: 34px;
+    height: 5vh;
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #FF7E9E;
+    box-sizing: border-box;
+    background-color: #2469a9;
     border-top: solid 4px #982649;
+    z-index: 2;
 }
 
 .botright-box {
@@ -92,6 +97,7 @@ a:hover {
     left: 0;
     height: 7.25vh;
     width: 100vw;
+    z-index: 2;
 }
 
 .boxleft {
@@ -116,18 +122,6 @@ a:hover {
     top: 15vh;
     left: 79vw;
     height: 12.5vh;
-    min-height: fit-content;
-    width: 13vw;
-    min-width: fit-content;
-    text-align: center;
-    padding: 5px;
-}
-
-.guestbox {
-    position: absolute;
-    top: 35vh;
-    left: 79vw;
-    height: 8vh;
     min-height: fit-content;
     width: 13vw;
     min-width: fit-content;
@@ -160,6 +154,7 @@ a:hover {
 .navbartop {
     position: relative;
     display: flex;
+    color: #e0ddeb;
     top: 3vh;
     left: 0;
     align-content: center;
@@ -168,6 +163,9 @@ a:hover {
     width: 13.5vw;
     margin: auto;
     padding: 15px;
+    border-radius: 15px;
+    background-color: #2469a9;
+    border: solid 6px #982649;
     border-radius: 15px;
 }
 
@@ -201,6 +199,8 @@ a:hover {
 
 .nav2 {
     position: relative;
+    display: flex;
+    flex-direction: column;
     bottom: 0;
     left: 0;
     height: 25%;
@@ -212,15 +212,14 @@ a:hover {
 .skullbox {
     display: inline-block;
     position: fixed;
-    top: 10vh;
+    top: 0;
     left: 18.75vw;;
-    height: 80vh;
+    height: 100%;
     width: 10vw;
     background-image: url("./assets/skull.gif");
     background-repeat: repeat-y;
     overflow: hidden;
     margin: 0 auto 0 auto;
-    z-index: 2;
 }
 
 #empty {
@@ -231,6 +230,18 @@ a:hover {
     width: 100%;
 }
 
+#guestbookBox {
+    text-decoration: none;
+    margin-top: -2vh;
+    height: fit-content;
+}
+
+#virus {
+    position: absolute;
+    top: 45vh;
+    right: 0;
+}
+
 #motorcycle {
     position: absolute;
     bottom: 5.5vh;
@@ -239,27 +250,21 @@ a:hover {
     height: 31vh;
 }
 
-#scrollNotif {
-    position: relative;
-    display: flex;
-    font-weight: bold;
-    font-size: 0.85em;
-    height: 3vh;
-    width: 100%;
-    justify-content: center;
-    box-sizing: border-box;
+#seinfeldgif2 {
+    position: absolute;
+    bottom: 26vh;
+    right: 15vw;
 }
 
-#tamanotchi {
+#strongbadgif {
     position: absolute;
-    font-size: 0.65em;
-    font-weight: bold;
-    top: 50vh;
-    left: 79vw;
-    height: 12vh;
-    width: 13vw;
-    min-height: fit-content;
-    min-width: fit-content;
-    text-align: center;
-    padding: 5px;
+    top: 5.8vh;
+    right: 15vw;
+    height: 75px;
+    z-index: 3;
+}
+
+#tamanotchiBox {
+    position: relative;
+    margin-top: 1vh;
 }
