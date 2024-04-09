@@ -5,6 +5,7 @@
 
 body {
     font-family: RetroGaming;
+    overflow-y: scroll;
 }
 
 #container {
@@ -29,27 +30,27 @@ body {
 }
 
 .left {
-    position: relative;
     float: left;
-    display: flex;
-    height: 500px;
-    width: 48%;
-    align-items: center;
-    justify-content: center;
-    border: solid #04BCAF;
-    border-width: 5px 5px 5px 0;
+    border-right: solid 10px #086d66;
 }
 
 .right {
-    position: relative;
     float: right;
+    border-left: solid 10px #086d66;
+}
+
+.leftAndRight {
+    position: relative;
     display: flex;
-    height: 500px;
-    width: 48%;
+    top: 2vh;
+    height: 65vh;
+    width: 45vw;
     align-items: center;
     justify-content: center;
-    border: solid #04BCAF;
-    border-width: 5px 0 5px 5px;
+    border-top: solid 10px #086d66;;
+    border-bottom: solid 10px #086d66;
+    border-radius: 8px;
+    margin-bottom: 10vh;
 }
 
 #bottom {
@@ -57,9 +58,14 @@ body {
     display: flex;
     bottom: 0;
     left: 0;
-    height: 35px;
-    width: 100vw;
-    border: 3px solid #DC9BEF;
+    height: 5vh;
+    min-height: fit-content;
+    width: 100%;
+    min-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 7px solid #000908;
     background-color: #8FECF8;
 }
 
@@ -67,9 +73,12 @@ body {
     position: relative;
     font-weight: bold;
     height: 140px;
+    min-height: fit-content;
     width: 30%;
-    border: 5px inset #04BCAF;
+    min-width: fit-content;
+    border: 8px inset #086d66;
     background-color: #8FECF8;
+    box-sizing: border-box;
 }
 
 #topboxS1 {
@@ -114,24 +123,48 @@ body {
     border: 5px inset #FB1470;
 }
 
-#leftbox {
+#gameMainBox {
     position: relative;
     display: flex;
-    height: 175px;
-    width: 40%;
+    height: fit-content;
+    width: fit-content;
     align-items: center;
     justify-content: center;
-    border: 5px outset #04BCAF;
-    background-color: #04BCAF;
+    border: 12px groove 
+    box-sizing: border-box;
 }
 
-#rightbox {
+#alttpImg1 {
+    height: 100%;
+    object-fit: contain;
+}
+
+#gameBox2 {
+    background-color: #ffffff;
+}
+
+#placeholderImg {
+    height: 30%;
+}
+
+#titleBoxLeft {
+    margin-top: 2vh;
+    margin-bottom: -2px;
     position: relative;
     display: flex;
-    height: 175px;
-    width: 40%;
-    align-items: center;
     justify-content: center;
-    border: 5px outset #04BCAF;
-    background-color: #04BCAF;
+    align-items: center;
+    color: #e3b6f1;
+    top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    left: 9vw;
+    height: 13vh;
+    min-height: fit-content;
+    width: 25vw;
+    background-color: #7dca86;
+    box-sizing: border-box;
+    border: 6px ridge #153c42;
+    border-radius: 6px;
+    padding: 2px;
 }

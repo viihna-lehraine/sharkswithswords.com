@@ -15,127 +15,163 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-    border: 1px solid red;
+    background-image: url("./assets/clouds1.jpg");
+    background-size: cover;
 }
 
 /*********** level 1 divs ***********/
 
-#top, #left, #middle, #right, #bottom {
-    border: 1px solid red;
-}
-
-#top, #left, #right, #bottom {
-    position: fixed;
-}
-
-#top, #left, #bottom {
-    display: flex;
-    left: 0;
-}
-
-#left, #right {
-    top: 177px;
-    height: calc(100vh - 175px);
-    background-color: green;
-}
-
 #top {
+    position: relative;
+    display: flex;
     top: 0;
-    height: 175px;
+    height: 18vh;
     width: 100vw;
     justify-content: stretch;
     align-items: stretch;
-    background-color: blue;
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+    background-image: url("assets/whiteBricks");
+    background-repeat: repeat;
+    border-bottom: 10px ridge #90ceda;
+    z-index: 2;
 }
 
 #left {
-    width: calc(20vw + 1px);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 20vw;
+    box-sizing: border-box;
 }
 
 #right {
+    position: fixed;
     right: 0;
+    height: 100vh;
     width: 20vw;
+    box-sizing: border-box;
 }
 
 #middle {
     position: absolute;
-    top: 176px;
-    left: calc(20vw + 1px);
-    height: calc(100vh - 175px);
-    width: calc(60vw - 4px);
-    overflow: scroll;
-    background-color: grey;
+    top: 19vh;
+    left: 20vw;
+    height: 100vh;
+    width: 60vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 
 #bottom {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
     bottom: 0;
     left: 0;
-    height: 35px;
+    height: 6vh;
     width: 100vw;
     z-index: 2;
-    background-color: orange;
+    background-color: #87ceeb;
+    box-sizing: border-box;
+    border-top: 5px inset #1d223e;
 }
 
 /*********** level 2 divs ***********/
 
-#topbox1, #topbox2, #topbox3, #midbox1 {
-    border: 1px solid red;
-}
-
-#topbox1, #topbox3 {
+#contentBox1 {
     position: relative;
     display: flex;
-    height: 175px;
-    width: 20%;
-    background: pink;
-}
-
-#topbox2 {
-    position: relative;
-    display: flex;
-    height: 99%;
-    width: 60%;
-    align-items: center;
-}
-
-#midbox1 {
-    position: relative;
     font-size: 1.35em;
-    top: 50px;
-    height: 900px;
-    width: 70%;
+    height: 55vh;
+    min-height: fit-content;
+    width: 50vw;
+    min-width: fit-content;
+    margin-top: 6vh;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 150px;
-    padding: 20px 50px 50px 50px;
-    background-color: skyblue;
+    padding: 35px 35px 50px 35px;
+    justify-content: center;
+    align-content: center;
+    background-color: #87ceeb;
+    box-sizing: border-box;
+    border: 5px inset #1d223e;
+    border-radius: 12px;
 }
 
 /*********** level 3 divs ***********/
 
-#bannerleft, #banner, #bannerright {
-    position: relative;
-    height: 100%;
-    border: 1px solid red;
-}
-
-#bannerleft {
-    width: calc(25% - 2px);
-    background-color: black;
-}
-
 #banner {
-    width: calc(50% - 2px);
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: fit-content;
     background-color: purple;
-}
-
-#bannerright {
-    width: calc(25% - 1px);
-    background-color: black;
+    border-left: 9px ridge #90ceda;
+    border-right: 9px ridge #90ceda;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: auto;
 }
 
 /***********              ***********/
 
-#mb1h1 {
+#the {
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+#bannerImg {
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+#navbarTitle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    top: 7vh;
+    align-items: center;
+    height: 10vh;
+    min-height: fit-content;
+    width: 85%;
+    min-width: fit-content;
+    margin: 0 auto 0 auto;
+    background-color: #87ceeb;
+    border: 7px inset #353b5f;
+    border-radius: 12px;
+}
+
+#navbarBody {
+    position: relative;
+    display: flex;
+    top: 7vh;
+    font-size: 2.25em;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    height: 35vh;
+    min-height: fit-content;
+    width: 85%;
+    min-width: fit-content;
+    margin: 2vh auto 0 auto;
+    padding: 30px 0 30px 0;
+    background-color: #87ceeb;
+    border: 7px inset #353b5f;
+    border-radius: 12px;
+}
+
+#theImgBox {
+    position: relative;
+    height: 100%;
+    border: 3px solid black;
+    border-radius: 6px;
 }
