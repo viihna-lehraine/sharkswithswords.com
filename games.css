@@ -130,7 +130,7 @@ body {
     width: fit-content;
     align-items: center;
     justify-content: center;
-    border: 12px groove 
+    border: 12px groove;
     box-sizing: border-box;
 }
 
