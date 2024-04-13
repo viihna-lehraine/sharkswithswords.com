@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Math Project</title>
+        <title>My First Javascript Project</title>
         <link rel="stylesheet" href="math-project.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -32,13 +32,13 @@
                 </div>
                 <div class="contentRow">
                     <div class="content">
-                        <label id="aLabel">Side A</label>
-                        <input type="text" id="aTextBox"><br><br>
-                        <label id="bLabel">Side B</label>
-                        <input type="text" id="bTextBox"><br><br>
-                        <button type="button" id="submitButton1">submit</button><br><br>
-                        <label id="cLabel">Hypotenuse: </label><br><br>
-                        <label id="dLabel">Area: </label>
+                        <label id="rightTriangleSideALabel">Side A</label>
+                        <input type="text" id="rightTriangleSideATextBox"><br><br>
+                        <label id="rightTriangleSideBLabel">Side B</label>
+                        <input type="text" id="rightTriangleSideBTextBox"><br><br>
+                        <button type="button" id="hypotenuseSubmitButton">submit</button><br><br>
+                        <label id="rightTriangleSideCLabel">Hypotenuse: </label><br><br>
+                        <label id="rightTriangleAreaLabel">Area: </label>
                     </div>
                 </div>
                 <div class="titleRow">
@@ -47,9 +47,9 @@
                 <div class="contentRow">
                     <div class="content">
                         <label id="radiusLabel">Radius</label>
-                        <input type="text" id="radiusTextBox"><br><br>
-                        <button type="text" id="submitButton2">submit</button><br><br>
-                        <label id="circumference">Circumference: </label><br><br>
+                        <input type="text" id="circleRadiusTextBox"><br><br>
+                        <button type="text" id="circleCircumferenceAndAreaButton">submit</button><br><br>
+                        <label id="circumferenceLabel">Circumference: </label><br><br>
                         <label id="circleArea">Area: </label>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                     <div class="content">
                         <label id="sphereRadiusLabel">Radius</label>
                         <input type="text" id="sphereRadiusTextBox"><br><br>
-                        <button type="text" id="submitButton3">submit</button><br><br>
+                        <button type="text" id="sphereSurfaceAreaAndVolumeButton">submit</button><br><br>
                         <label id="sphereSurfaceAreaLabel">Surface Area: </label><br><br>
                         <label id="sphereVolumeLabel">Volume: </label>
                     </div>
@@ -71,14 +71,14 @@
                 <div class="contentRow">
                     <div class="content">
                         <p><em>Let x = ax<sup>2</sup> + bx + c</em></p><br><br>
-                        <label id="aQuadraticLabel">a</label>
-                        <input type="text" id="aQuadraticTextBox"><br><br>
-                        <label id="bQuadraticLabel">b</label>
-                        <input type="text" id="bQuadraticTextBox"><br><br>
-                        <label id="cQuadraticLabel">c</label>
-                        <input type="text" id="cQuadraticTextBox"><br><br>
-                        <button type="text" id="submitButton4">submit</button><br><br>
-                        <label id="xQuadraticOutput">x = </label>
+                        <label id="quadraticFormulConstantALabel">a</label>
+                        <input type="text" id="quadraticFormulaConstantATextBox"><br><br>
+                        <label id="quadraticFormulaConstantBLabel">b</label>
+                        <input type="text" id="quadraticFormulaConstantBTextBox"><br><br>
+                        <label id="quadraticFormulaConstantCLabel">c</label>
+                        <input type="text" id="quadraticFormulaConstantCTextBox"><br><br>
+                        <button type="text" id="quadraticFormulaSubmitButton">submit</button><br><br>
+                        <label id="quadraticFormulaSolutionLabel">x = </label>
                     </div>
                 </div>
                 <div class="titleRow">
@@ -101,14 +101,12 @@
                 </div>
                 <div class="contentRow">
                     <div class="content">
-                        <label id="diceSideNumberLabel">How many <b>sides</b>?</label>
-                        <input type="text" id="diceSideNumber"><br><br>
-
                         <label id="diceNumberLabel">How many <b>dice</b>?</label>
-                        <input type="text" id="diceNumber"><br><br>
-
-                        <button type="text" id="submitButton9">submit</button><br><br>
-
+                        <input type="text" id="howManyDiceInput"><br><br>
+                        <label id="diceSideNumberLabel">How many <b>sides</b>?</label>
+                        <input type="text" id="howManySidesInput"><br><br>
+                        <button type="text" id="submitButtonDice">submit</button>
+                        <button type=text" id="diceResetButton">reset</button><br><br>
                         <label id="diceResultTotal">Result (Total): </label><br><br>
                         <label id="diceResultIndividual">Result (Individual Dice): </label>
                     </div>
@@ -119,13 +117,15 @@
                 <p>©2024 Viihna (Voidfucker) | <a href="contact.html">Contact Info</a></p>
             </div>
         </div>
-        <script src="math-project.js"></script>
+        <script src="js-project1.js"></script>
     </body>
 </html>
 
 
 
 <!--
+
+Add button to change page to random color
 
 
 <div class="titleRow">
