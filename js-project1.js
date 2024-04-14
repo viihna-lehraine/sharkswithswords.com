@@ -6,7 +6,7 @@ document.getElementById('hypotenuseSubmitButton').onclick = function() {
     rightTriangleSideB = document.getElementById("rightTriangleSideBTextBox").value;
     rightTriangleSideB = Number(rightTriangleSideB);
 
-    rightTriangleSideC = Math.sqrt(Math.pow(rightTriangleSideA, 2) + Math.pow(rightTriangleSideC, 2));
+    rightTriangleSideC = Math.sqrt(Math.pow(rightTriangleSideA, 2) + Math.pow(rightTriangleSideB, 2));
     rightTriangleArea = 0.5 * (rightTriangleSideA * rightTriangleSideB);
 
     document.getElementById("rightTriangleSideCLabel").innerHTML = "Side C (Hypotenuse): " + rightTriangleSideC;
@@ -48,7 +48,7 @@ document.getElementById('quadraticFormulaSubmitButton').onclick = function() {
     quadraticFormulaConstantB = document.getElementById('quadraticFormulaConstantBTextBox').value;
     quadraticFormulaConstantB = Number(quadraticFormulaConstantB);
 
-    quadraticFormulaConstantC = document.getElementById('quadraticFormulaConstantC').value;
+    quadraticFormulaConstantC = document.getElementById('quadraticFormulaConstantCTextBox').value;
     quadraticFormulaConstantC = Number(quadraticFormulaConstantC);
 
     quadraticFormulaVariableX1 = (((-1) * quadraticFormulaConstantB) + Math.sqrt((Math.pow(quadraticFormulaConstantB, 2)) - (4 * quadraticFormulaConstantA * quadraticFormulaConstantC))) / (2 * quadraticFormulaConstantA);
@@ -61,34 +61,58 @@ document.getElementById('quadraticFormulaSubmitButton').onclick = function() {
 
 bill = document.getElementById('billTextBox').value;
 bill = Number(bill);
+billFormatted = bill.toLocaleString("en-US", {style: "currency", currency: "USD"});
 
-tip10 = bill * (10 / 100);
-tip15 = bill * (15 / 100);
-tip20 = bill * (20 / 100);
-tip25 = bill * (25 / 100);
+tip10 = bill * 0.1;
+tip10Formatted = tip10.toLocaleString("en-US", {style: "currency", currency: "USD"});
+totalBill10 = bill * 1.1;
+totalBill10Formatted = totalBill10.toLocaleString("en-US", {style: "currency", currency: "USD"});
 
-document.getElementById('tipCalculatorSubmitButton').onclick = function() {
+tip15 = bill * 0.15;
+tip15Formatted = tip15.toLocaleString("en-US", {style: "currency", currency: "USD"});
+totalBill15 = bill * 1.15;
+totalBill15Formatted = totalBill15.toLocaleString("en-US", {style: "currency", currency: "USD"});
 
-    document.getElementById('tipOutput1').innerHTML = "Tip = " + tip10;
-    document.getElementById('tipOutput2').innerHTML = "Total Bill: " + (bill + tip10);
+tip20 = bill * 0.2;
+tip20Formatted = tip20.toLocaleString("en-US", {style: "currency", currency: "USD"});
+totalBill20 = bill * 1.2;
+totalBill20Formatted = totalBill20.toLocaleString("en-US", {style: "currency", currency: "USD"});
+
+tip25 = bill * 0.25;
+tip25Formatted = tip10.toLocaleString("en-US", {style: "currency", currency: "USD"});
+totalBill25 = bill * 1.25;
+totalBill25Formatted = totalBill25.toLocaleString("en-US", {style: "currency", currency: "USD"});
+
+document.getElementById('tipCalculatorSubmitButton1').onclick = function() {
+
+    document.getElementById('tipOutput1').innerHTML = "Tip = " + tip10Formatted;
+    totalBill10 = bill + tip10;
+    totalBill10Formatted = totalBill10.toLocaleString("en-US", {style: "currency", currency: "USD"});
+    document.getElementById('tipOutput2').innerHTML = "Total Bill: " + (totalBill10Formatted);
 }
 
-document.getElementById('submitButton6').onclick = function() {
+document.getElementById('tipCalculatorSubmitButton2').onclick = function() {
 
-    document.getElementById('tipOutput1').innerHTML = "Tip = " + tip15;
-    document.getElementById('tipOutput2').innerHTML = "Total Bill: " + (bill + tip15);
+    document.getElementById('tipOutput1').innerHTML = "Tip = " + tip15Formatted;
+    totalBill15 = bill + tip15;
+    totalBill15Formatted = totalBill15.toLocaleString("en-US", {style: "currency", currency: "USD"});
+    document.getElementById('tipOutput2').innerHTML = "Total Bill: " + (totalBill15Formatted);
 }
 
-document.getElementById('submitButton7').onclick = function() {
+document.getElementById('tipCalculatorSubmitButton3').onclick = function() {
 
-    document.getElementById('tipOutput1').innerHTML = "Tip = " + tip20;
-    document.getElementById('tipOutput2').innerHTML = "Total Bill: " + (bill + tip20);
+    document.getElementById('tipOutput1').innerHTML = "Tip = " + tip20Formatted;
+    totalBill20 = bill + tip20;
+    totalBill20Formatted = totalBill20.toLocaleString("en-US", {style: "currency", currency: "USD"});
+    document.getElementById('tipOutput2').innerHTML = "Total Bill: " + (totalBill20Formatted);
 }
 
-document.getElementById('submitButton8').onclick = function() {
+document.getElementById('tipCalculatorSubmitButton4').onclick = function() {
 
-    document.getElementById('tipOutput1').innerHTML = "Tip = " + tip25;
-    document.getElementById('tipOutput2').innerHTML = "Total Bill: " + (bill + tip25);
+    document.getElementById('tipOutput1').innerHTML = "Tip = " + tip25Formatted;
+    totalBill25 = bill + tip25;
+    totalBill25Formatted = totalBill25.toLocaleString("en-US", {style: "currency", currency: "USD"});
+    document.getElementById('tipOutput2').innerHTML = "Total Bill: " + (totalBill25Formatted);
 }
 
 // Dice Roller
@@ -97,16 +121,55 @@ document.getElementById('submitButton8').onclick = function() {
 // user can roll multiple sets of dice at once
 // turn the section into a dnd encounter tracker (AC and HP)
 
-howManySides = Number(document.getElementById('howManySidesInput').value);
-howManyDice = Number(document.getElementById('howManyDiceInput').value);
+howManySides = Number(document.getElementById('howManySidesInput').value);            //  howManySides is equal to (the number version of) the value from the HTML element "howManySides"
+howManyDice = Number(document.getElementById('howManyDiceInput').value);              //  howManyDice is equal to (the number version of) the value of the HTML element "howManyDice"
 
-document.getElementById('submitButtonDice').onclick = function() {               
-    for(let i = 1; i <= howManyDice; i += 1){
-        var roll = ((Math.floor(Math.random() * howManySides)) + 1);
+document.getElementById('submitButtonDice').onclick = function() {                                                                         // when the element with the id "submitButtonDice" is clicked, perform the function, defines as...  
+    for(let i = 1; i <= howManyDice; i += 1) {                                        // for each value of (i, starting at 1, increasing by 1 on each iteration. Continue as long as the value of i is less than the value of howManySides)
+        var roll = ((Math.floor(Math.random() * howManySides)) + 1);                  // the function-scope variable "roll" is equal to ( ((a random number 0-1) * howManySides)) + 1)
         document.getElementById('diceResultIndividual').innerHTML += roll + " ";
-    console.log('Individual die results now available.');
+        var totalDiceValue = 0;
+        totalDiceValue+= roll;
+    }
+    document.getElementById('diceResultTotal').innerHTML += totalDiceValue; 
+}
+
+document.getElementById('resetButtonDice').onclick = function() {
+    document.getElementById('diceResultTotal').innerHTML = "Result (Total): ";
+    document.getElementById('diceResultIndividual').innerHTML = "Result (Individual Dice): ";
+}
+
+
+
+
+
+/*
+    for(let i = 1; i <= howManyDice; i+=1) {
+        for(let j = 1; j <= howManyDice; j += 1) {          
+            let rollCounter = 0;                                                          // for each value of (i, starting at 1, increasing by 1 on each iteration. Continue as long as the value of i is less than the value of howManySides)
+            var roll = ((Math.floor(Math.random() * howManySides)) + 1);                  // the function-scope variable "roll" is equal to ( ((a random number 0-1) * howManySides)) + 1)
+            document.getElementById('diceResultIndividual').innerHTML += roll + " ";
+            rollCounter+=1;
+        };
+        document.getElementByID('diceResultsTotal')
     }
 }
+*/
+/*
+function() {                                                                          // when the element with the id "submitButtonDice" is clicked, perform the function, defines as...
+    for(let i = 1; i <= howManyDice; i += 1) {                                        // for each value of (i, starting at 1, increasing by 1 on each iteration. Continue as long as the value of i is less than the value of howManySides)
+        var roll = ((Math.floor(Math.random() * howManySides)) + 1);                  // the function-scope variable "roll" is equal to ( ((a random number 0-1) * howManySides)) + 1)
+        document.getElementById('diceResultIndividual').innerHTML += roll + " ";
+        console.log('Individual die results now available.');
+    }
+}
+*/
+
+// GOAL
+// every time roll is
+
+
+
 
 document.getElementById('diceResultIndividual').innerHTML = "Result (Individual Dice): ";
 
