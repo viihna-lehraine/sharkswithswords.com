@@ -76,6 +76,14 @@
     box-sizing: border-box;
 }
 
+#navBody p {
+   margin: 5vh auto 5vh auto;
+}
+
+#navLink {
+    justify-content: center;
+}
+
 #center {
     position: absolute;
     display: flex;

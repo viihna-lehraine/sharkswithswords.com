@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My First Javascript Project</title>
+        <link rel="stylesheet" href="math-project.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="stylesheet" href="diceroller.css">
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="container">
+            <div id="top">
+                <div id="pageTitle">
+                    <h1>Dice Roller</h1>
+                </div>
+            </div>
+            <div id="center">
+                <div id="blankRow"></div>
+                <div class="contentRow">
+                    <div class="content">
+                        <label id="diceNumberLabel">How many <b>dice</b>?</label>
+                        <input type="text" id="howManyDiceInput"><br><br>
+                        <label id="diceSideNumberLabel">How many <b>sides</b>?</label>
+                        <input type="text" id="howManySidesInput"><br><br>
+                        <label id="diceModifierLabelAddSubtract">Add a <b>modifier</b> to the total <em>(can be 0)</em></label>
+                        <input type="text" id="diceModifierInputAddSubtract"><br><br>
+                        <label id="diceModifierLabel2">Multiply by a <b>modifier</b>?</label>
+                        <input type="text" id="diceModifierInputMultiply"><br><br>
+                        <button type="text" id="submitButtonDice">submit</button>
+                        <button type=text" id="resetButtonDice">reset</button>
+                        <button type="text" id="resetInputFieldsDice">clear</button><br><br>
+                        <label id="diceResultTotal">Result (Total): </label><br><br>
+                        <label id="diceResultIndividual">Result (Individual Dice): </label>
+                    </div>
+                </div>
+            </div>
+            <div id="right"></div>
+            <br><br><br><br><br><br><br>
+            <p><a href="main.html">Main Page</a> | <a href="sitemap.html">Sitemap</a> | <a href="projects.html">Main Projects Page</a></p><br>
+            <div id="bottomBar">
+                <p>©2024 Viihna (Voidfucker) | <a href="contact.html">Contact Info</a></p>
+            </div>
+        </div>
+        <script src="diceRoller.js"></script>
+    </body>
+</html>
