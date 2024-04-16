@@ -42,7 +42,6 @@ a:hover {
 .bottombar {
     position: fixed;
     display: flex;
-    font-size: 1.5em;
     color: #e0ddeb;
     bottom: 0;
     left: 0;
@@ -51,7 +50,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    background-color: #2469a9;
+    background-color: #4b8bc7;
     border-top: solid 4px #982649;
     z-index: 2;
 }
@@ -154,7 +153,6 @@ a:hover {
 .navbartop {
     position: relative;
     display: flex;
-    color: #e0ddeb;
     top: 3vh;
     left: 0;
     align-content: center;
@@ -164,9 +162,10 @@ a:hover {
     margin: auto;
     padding: 15px;
     border-radius: 15px;
-    background-color: #2469a9;
     border: solid 6px #982649;
     border-radius: 15px;
+    background-color: #ff7e9e;
+    color: #ede8e9;
 }
 
 .navtext {
@@ -258,7 +257,7 @@ a:hover {
 
 #strongbadgif {
     position: absolute;
-    top: 5.8vh;
+    top: 5vh;
     right: 15vw;
     height: 75px;
     z-index: 3;
