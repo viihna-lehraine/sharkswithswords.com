@@ -116,78 +116,54 @@ document.getElementById('tipCalculatorSubmitButton4').onclick = function() {
 }
 
 // Dice Roller
+                  
+let roll = 0;
+let totalDiceValue = 0;
 
-// let the user add an integer modifier to the total roll value
-// user can roll multiple sets of dice at once
-// turn the section into a dnd encounter tracker (AC and HP)
+document.getElementById('submitButtonDice').onclick = function() {
 
-howManySides = Number(document.getElementById('howManySidesInput').value);            //  howManySides is equal to (the number version of) the value from the HTML element "howManySides"
-howManyDice = Number(document.getElementById('howManyDiceInput').value);              //  howManyDice is equal to (the number version of) the value of the HTML element "howManyDice"
+    let howManySides = Number(document.getElementById('howManySidesInput').value);
+    let howManyDice = Number(document.getElementById('howManyDiceInput').value);
+    let diceModifierAddSubtract = Number(document.getElementById('diceModifierAddSubtract').value);
+    let diceModifierMultiply = Number(document.getElementById('diceModifierInput2').value);
 
-document.getElementById('submitButtonDice').onclick = function() {                                                                         // when the element with the id "submitButtonDice" is clicked, perform the function, defines as...  
-    for(let i = 1; i <= howManyDice; i += 1) {                                        // for each value of (i, starting at 1, increasing by 1 on each iteration. Continue as long as the value of i is less than the value of howManySides)
-        var roll = ((Math.floor(Math.random() * howManySides)) + 1);                  // the function-scope variable "roll" is equal to ( ((a random number 0-1) * howManySides)) + 1)
+    document.getElementById('diceResultIndividual').innerHTML = "Result (Individual Dice): ";
+    totalDiceValue = 0;
+    let existingText = document.getElementById('diceResultIndividual').innerHTML;
+    document.getElementById('diceResultIndividual').innerHTML = existingText;
+
+    for (let i = 1; i <= howManyDice; i += 1) {
+        roll = Math.floor(Math.random() * howManySides) + 1;
+        totalDiceValue += roll;
         document.getElementById('diceResultIndividual').innerHTML += roll + " ";
-        var totalDiceValue = 0;
-        totalDiceValue+= roll;
     }
-    document.getElementById('diceResultTotal').innerHTML += totalDiceValue; 
+    if (diceModifier2 != "") {
+        totalDiceValue *= diceModifierMultiply;
+    }
+
+    totalDiceValue += diceModifierAddSubtract; 
+    document.getElementById('diceResultTotal').innerHTML = "Result (Total): " + totalDiceValue;
 }
 
 document.getElementById('resetButtonDice').onclick = function() {
     document.getElementById('diceResultTotal').innerHTML = "Result (Total): ";
     document.getElementById('diceResultIndividual').innerHTML = "Result (Individual Dice): ";
+    document.getElementById('howManyDiceInput').value = "";
+    document.getElementById('howManySidesInput').value = "";
+    document.getElementById('diceModifierInputAddSubtract').value = "";
+    document.getElementById('diceModifierInputMultiply').value = "";
 }
 
-
-
-
-
-/*
-    for(let i = 1; i <= howManyDice; i+=1) {
-        for(let j = 1; j <= howManyDice; j += 1) {          
-            let rollCounter = 0;                                                          // for each value of (i, starting at 1, increasing by 1 on each iteration. Continue as long as the value of i is less than the value of howManySides)
-            var roll = ((Math.floor(Math.random() * howManySides)) + 1);                  // the function-scope variable "roll" is equal to ( ((a random number 0-1) * howManySides)) + 1)
-            document.getElementById('diceResultIndividual').innerHTML += roll + " ";
-            rollCounter+=1;
-        };
-        document.getElementByID('diceResultsTotal')
-    }
+document.getElementById('resetInputFieldsDice').onclick = function() {
+    document.getElementById('howManyDiceInput').value = "";
+    document.getElementById('howManySidesInput').value = "";
+    document.getElementById('diceModifierInputMultiply').value = "";
 }
-*/
-/*
-function() {                                                                          // when the element with the id "submitButtonDice" is clicked, perform the function, defines as...
-    for(let i = 1; i <= howManyDice; i += 1) {                                        // for each value of (i, starting at 1, increasing by 1 on each iteration. Continue as long as the value of i is less than the value of howManySides)
-        var roll = ((Math.floor(Math.random() * howManySides)) + 1);                  // the function-scope variable "roll" is equal to ( ((a random number 0-1) * howManySides)) + 1)
-        document.getElementById('diceResultIndividual').innerHTML += roll + " ";
-        console.log('Individual die results now available.');
-    }
-}
-*/
 
-// GOAL
-// every time roll is
-
-
-
-
-document.getElementById('diceResultIndividual').innerHTML = "Result (Individual Dice): ";
-
-/* Tried this. it didnt work. oh well
-
-document.getElementById('submitButtonDice').onclick = function() {               
-    for(let i = 1; i <= howManyDice; i += 1){
-        if(i = 1) {
-            var roll = ((Math.floor(Math.random() * howManySides)) + 1);
-            var diceSum = roll;
-            document.getElementById('diceResultIndividual').innerHTML += roll + " ";
-        }
-        else {
-            console.log('idkman');
-            // dicesum = dicesum + roll;
-
-        }
-    console.log('Individual die results now available.');
-    }
-}
-*/
+// add roll history
+// give the user customizable dice sets - different number sides and quantities in a single dice roll (6d6 + 8d12 etc)
+// modifier for each individual die 
+// save and load configurations
+// randomized sounds effects OR sound effect packs with selectable themes
+// a really stupid animation?
+// accessibility features
