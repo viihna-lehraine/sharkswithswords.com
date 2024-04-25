@@ -3,8 +3,8 @@ function myFunction() {
   }
 
 window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
+    if (!event.target.matches('.dropdownButton')) {
+      var dropdowns = document.getElementsByClassName("dropdownContent");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
@@ -13,4 +13,4 @@ window.onclick = function(event) {
         }
       }
     }
-  } 
+} 
