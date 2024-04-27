@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    color: #dbcde7;
+}
+
+#container {
+    position: fixed;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.7fr 1.6fr 0.7fr; 
+    grid-template-rows: 0.35fr 0.625fr 0.1fr 3.4fr 0.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      ". mainContentTitleField ."
+      ". . ."
+      ". mainContentField ."
+      ". . ."; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/purplewaves.jpg");
+    background-size: cover;
+}
+
+.contentBox {
+    background-color: #19052a;
+    border: 6px ridge #b275e4;
+    border-radius: 8px;
+}
+
+#mainContentField {
+    grid-area: mainContentField;
+    overflow-y: scroll;
+    padding: 14px;
+}
+
+#mainContentTitleField {
+    grid-area: mainContentTitleField;
+    display: flex;
+    color: #dbcde7;
+    font-size: 1.2em;
+    width: 55%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    position: absolute;
+    color: #5f09ab;
+    height: 7.5vh;
+    margin-top: 14.5vh;
+    z-index: 2;
+    border: 4px inset #670cb6;
+    border-radius: 9px;
+}
+
+#homeButton {
+    float: left;
+    left: 33vw;
+}
+
+#sitemapButton {
+    float: right;
+    right: 33vw;
+}
+
+#bottomBar {
+    position: fixed; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 7vh;
+    width: 100%;
+    border-top: 6px ridge #b275e4;
+    background-color: #19052a;
+}
