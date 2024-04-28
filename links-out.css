@@ -101,7 +101,7 @@
 #bottomContainer {
     grid-area: bottomContainer;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #4c41db;
     border-top: 5px ridge #d8b8f1;
 }
@@ -152,14 +152,6 @@
 
 #mainContainerEmptyFieldCenter {
     grid-area: mainContainerEmptyFieldCenter;
-}
-
-img#pillowPet {
-    height: 150px;
-}
-
-img#iShant {
-    height: 150px;
 }
 
 .contentBox {

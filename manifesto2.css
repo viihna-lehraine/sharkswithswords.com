@@ -1,6 +1,72 @@
+@font-face {
+    font-family: "ALTTP Reg Font";
+    src: url("./assets/fonts/alttp/ReturnofGanon.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Classic Console";
+    src: url("assets/fonts/classic_console_neue/clacon2.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Airstrike";
+    src: url("assets/fonts/airstrike/airstrikechrome.ttf") format('truetype');
+}
+
+@keyframes expandButton {
+    from {
+        transform: scale(1);
+        background-color: #d9aece;
+    }
+    to {
+        transform: scale(1.2);
+        background-color: #e31572;
+    }
+}
+
+@keyframes colorPulse {
+    0%, 100% {
+        background-color: #d9aece;
+    }
+    50% {
+        background-color: #d9aece;
+    }
+}
+
+@keyframes Jesus {
+    0% {
+        right: 1.25vw;
+        top: 5.5vh;
+    }
+    20% {
+        right: calc(1.25vw -3 px);
+        top: calc(5.5vh + 5px);
+    }
+    40% {
+        right: calc(1.25vw + 5px);
+        top: calc(5.5vh - 3px);
+    }
+    60% {
+        right: calc(1.25vw - 3px);
+        top: calc(5.5vh + 4px);
+    }
+    80% {
+        right: calc(1.25vw + 4px);
+        top: calc(5.5vh - 6px);
+    }
+    100% {
+        right: calc(1.25vw - 2px);
+        top: calc(5.5vh + 5px)
+    }
+}
+
 * {
     box-sizing: border-box;
     color: #dbcde7;
+}
+
+body {
+    cursor: url("./assets/cursors/mj.cur"), auto;
 }
 
 #container {
@@ -32,6 +98,7 @@
     width: 100%;
     background-image: url("./assets/glossyhearts.gif");
     background-repeat: repeat;
+    z-index: 3;
 }
 
 .contentBox {
@@ -42,8 +109,10 @@
 
 #mainContentField {
     grid-area: mainContentField;
+    font-family: "Classic Console", sans-serif;
+    font-size: 1.25em;
     overflow-y: scroll;
-    padding: 14px;
+    padding: 20px;
     z-index: 2;
 }
 
@@ -51,34 +120,59 @@
     grid-area: mainContentTitleField;
     display: flex;
     color: #dbcde7;
-    font-size: 1.2em;
-    width: 55%;
-    margin: 0 auto 0 auto;
+    font-family: "Airstrike";
+    font-size: 2.2em;
+    width: 70%;
+    margin: 2.5vh auto 0 auto;
     text-align: center;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
+    background-color: #19052a;
+    border: 6px ridge #b275e4;
+    border-radius: 15px;
 }
 
 .button {
     position: absolute;
+    font-family: "ALTTP Reg Font", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
     color: #5f09ab;
     height: 7.5vh;
-    width: 5vw;
-    margin-top: 10vh;
+    width: 8vw;
+    top: 20vh;
     z-index: 3;
+    text-align: center;
     border: 4px inset #670cb6;
-    border-radius: 20px;
+    background-color: #d9aece;
+    border-radius: 25px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.button:hover {
+    transition: #d9aece 0.5s ease;
+    animation-name: colorPulse 1s infinite alternate;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    cursor: url("assets/cursors/gam1184.cur"), auto;
+}
+
+.button-animate {
+    animation: expandButton 1s infinite alternate;
+    transform: scale(1.2);
+    background-color: #e31572;
 }
 
 #homeButton {
     float: left;
-    left: 33.5vw;
+    left: 28vw;
 }
 
 #sitemapButton {
     float: right;
-    right: 33.5vw;
+    right: 28vw;
 }
 
 #bottomBar {
@@ -94,34 +188,42 @@
     background-color: #19052a;
 }
 
+#cpm {
+    position: relative;
+    height: 170vh;
+    width: 100%;
+}
+
 img {
     position: absolute;
 }
 
 #img1 {
-    left: 7vw;
-    top: 18vh;
+    left: 5vw;
+    top: 27vh;
     height: 5vh;
+    z-index: 3;
 }
 
 #img2 {
     right: 1.25vw;
-    top: 18vh;
+    top: 18.75vh;
     height: 20vh;
     border: 4px solid #b275e4;
 }
 
 #img3 {
-    left: 5.25vw;
+    left: 7vw;
     top: 25vh;
     height: 15vh;
 }
 
 #img4 {
     right: 1.25vw;
-    top: 40vh;
+    top: 39.25vh;
     height: 28vh;
     border: 4px solid #b275e4;
+    z-index: 2;
 }
 
 #img5 {
@@ -137,7 +239,7 @@ img {
 
 #img7 {
     left: 16.25vw;
-    top: 50.5vh;
+    top: 49.75vh;
 }
 
 #img9 {
@@ -147,9 +249,11 @@ img {
 }
 
 #img10 {
-    right: 1vw;
-    top: 72vh;
-    height: 15vh;
+    right: 0vw;
+    bottom: 14vh;
+    height: 20vh;
+    margin-right: -1vw;
+    z-index: 3;
 }
 
 #img11 {
@@ -161,16 +265,221 @@ img {
 #img12 {
     right: 1vw;
     bottom: 7.5vh;
-    z-index: 2;
+    z-index: 3;
 }
 
 #img13 {
-    left: 17vw;
-    top: 30vh;
+    left: 17.2vw;
+    top: 32vh;
     height: 12vh;
+    z-index: 2;
 }
 
 #img14 {
     right: 17.375vw;
-    top: 20vh;
+    top: 19vh;
+}
+
+#img15 {
+    left: 16.3vw;
+    top: 59vh;
+}
+
+#img16 {
+    right: 10vw;
+    bottom: 8vh;
+    height: 18.5vh;
+    z-index: 2;
+}
+
+#img17 {
+    left: 1.425vw;
+    top: 74.5vh;
+    height: 9vh;
+}
+
+#img18 {
+    left: 13.5vw;
+    top: 19vh;
+    z-index: 2;
+}
+
+#img19 {
+    right: 17.4vw;
+    top: 24.25vh;
+}
+
+#img20 {
+    left: 12.5vw;
+    bottom: 11vh;
+    height: 15vh;
+    z-index: 3;
+}
+
+#img21 {
+    right: 16.4vw;
+    top: 39.75vh;
+}
+
+#img22 {
+    right: 17.7vw;
+    top: 28vh;
+    height: 13vh;
+}
+
+#img23 {
+    left: 25vw;
+    top: 1vh;
+    height: 19vh;
+    z-index: 2;
+}
+
+#img24 {
+    right: 25vw;
+    top: 1vh;
+    height: 19vh;
+    z-index: 2;
+}
+
+#img25 {
+    left: 10vw;
+    top: 33.85vh;
+    height: 8.9vh;
+    z-index: 2;
+}
+
+#img26 {
+    left: 16vw;
+    top: 23vh;
+    height: 8vh;
+    z-index: 2;
+}
+
+#img27 {
+    right: 32.13vh;
+    top: 48vh;
+    height: 13.25vh;
+    border: 3px solid #b275e4;
+    z-index: 2;
+}
+
+#img28 {
+    left: 15vw;
+    top: 5vh;
+    height: 12vh;
+    z-index: 2;
+}
+
+#img29 {
+    left: 6vw;
+    bottom: 30vh;
+    height: 11.75vh;
+    z-index: 2;
+}
+
+#img30 {
+    left: 27vw;
+    bottom: 7vh;
+    height: 6vh;
+    z-index: 2;
+}
+
+#img31 {
+    right: 27vw;
+    bottom: 7vh;
+    height: 6vh;
+    z-index: 2;
+}
+
+#img32 {
+    left: 0.25vw;
+    top: 4vw;
+    height: 22vh;
+}
+
+#img33 {
+    right: 17.5vw;
+    top: 9.75vh;
+    height: 9vh;
+    z-index: 2;
+}
+
+#img34 {
+    right: 15vw;
+    bottom: 24vh;
+    border: 2px solid #b275e4;
+    border-radius: 60px;
+}
+
+#img35 {
+    right: 36vw;
+    top: 14vh;
+    height: 12vh;
+    z-index: 2;
+}
+
+#img36 {
+    left: 34.5vw;
+    top: 13vh;
+    z-index: 2;
+}
+
+#img37 {
+    left: 38vw;
+    top: 15vh;
+    z-index: 2;
+}
+
+#img38 {
+    right: 2vw;
+    top: 35vh;
+    height: 16vh;
+    z-index: 2;
+}
+
+/*JESUS PSP */
+#img39 {
+    right: 1.25vw;
+    top: 5.5vh;
+    animation-name: Jesus;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+#img40 {
+    right: 8.5vw;
+    bottom: 22vh;
+    height: 10vh;
+    border: 2px solid #b275e4;
+}
+
+#img41 {
+    top: 1.5vh;
+    right: 38vw;
+    z-index: 2;
+}
+
+#img42 {
+    top: 4vh;
+    right: 33vw;
+    z-index: 2;
+}
+
+#img43 {
+    top: 24.25vh;
+    left: 1vw;
+    height: 19vh;
+    border: 2px solid #b275e4;
+}
+
+#img44 {
+    top: 19vh;
+    left: 43vw;
+    height: 14vh;
+    border: 2px solid #b275e4;
+}
+
+#img45 {
+    top: 21vh;
+    right: 42.75vw;
 }
