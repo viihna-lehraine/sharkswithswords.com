@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Classic Console";
-    src: url("assets/fonts/classic_console_neue/clacon2.ttf") format('truetype');
+    font-family: 'Classic Console';
+    src: url("./assets/fonts/classic_console_neue/clacon2.ttf") format('truetype');
 }
 
 @keyframes expandButton {
@@ -12,6 +12,11 @@
         transform: scale(1.2);
         background-color: #e84545;
     }
+}
+
+body {
+    background-image: url("assets/images-main/bg1.png");
+    background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -70,7 +75,7 @@ button:hover {
     background-color: #cec63e;
     color: #0f1459;
     padding: 15px;
-    animation: expandButton 0.5s forwards, jitter 0.25s infinie;
+    animation: expandButton 0.5s forwards, jitter 0.25s infinite;
     border: groove 10px #3e1435;
     border-radius: 100px;
 }
@@ -202,7 +207,7 @@ h1, #header {
     top: 22vh;
     order: 3;
 }
-d
+
 #desktopImgHide {
     display: none !important;
 }
