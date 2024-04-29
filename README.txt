@@ -1,39 +1,39 @@
     NEXT STEPS
 
 
-
-1   fix index-mobile.html / .css / .js
-
-
-2   fix favicons [ALL PAGES]
+1   fix links to assets and other pages cross-site
 
 
-3   fix links to assets and other pages cross-site
-
-    list finished pages as they are completed here:     index.html / index.css / index.js
+2   personal detail section on main.html
 
 
-4   fix protonmail public key
+3   create RSS feed
 
 
-5   personal detail section on main.html
+4   chatbox on main.html
 
 
-6   create RSS feed
+5   journal5.html
 
 
-7   chatbox on main.html
-
-
-8   journal5.html
-
-
-9   mobile sites:   main -> sitemap -> not-found -> journal -> (journal pages) -> music ->    
+6   mobile sites:   main -> sitemap -> not-found -> journal -> (journal pages) -> music ->    
                     skelefriends
 
 
-10   clean up and unify HTML/CSS across site
+7   clean up and unify HTML/CSS across site
 
+
+
+--------------------------------------------------------------------------------------------------0
+
+
+
+OTHER ISSUES
+
+
+* center band logos on music.html
+* find better site-wide cursors
+* check/fix fonts cross-site
 
 
 --------------------------------------------------------------------------------------------------

@@ -1,14 +1,10 @@
 @font-face {
     font-family: "ALTTP Reg Font";
-    src: url("./assets/fonts/alttp/ReturnofGanon.ttf") format('truetype');
+    src: url("../../assets/fonts/alttp/ReturnofGanon.ttf") format('truetype');
 }
 
 body {
     font-family: "ALTTP Reg Font", sans-serif;
-}
-
-#authorNote {
-    
 }
 
 #container {
@@ -17,7 +13,7 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url("./assets/clouds1.jpg");
+    background-image: url("../../assets/images-main/clouds1.jpg");
     background-size: cover;
 }
 
@@ -31,8 +27,9 @@ body {
     align-items: stretch;
     box-sizing: border-box;
     margin: 0 auto 0 auto;
-    background-image: url("assets/whiteBricks");
+    background-image: url("../../assets/images-main/whiteBricks.jpg");
     background-repeat: repeat;
+    background-size: contain;
     border-bottom: 10px ridge #90ceda;
     z-index: 2;
 }

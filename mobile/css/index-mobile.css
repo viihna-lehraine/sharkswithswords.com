@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Classic Console';
-    src: url("./assets/fonts/classic_console_neue/clacon2.ttf") format('truetype');
+    src: url("../../assets/fonts/classic_console_neue/clacon2.ttf") format('truetype');
 }
 
 @keyframes expandButton {
@@ -15,7 +15,7 @@
 }
 
 body {
-    background-image: url("assets/images-main/bg1.png");
+    background-image: url("../../assets/images-main/bg1.png");
     background-size: cover;
 }
 
@@ -43,6 +43,12 @@ body {
         background-color: #6a65f5;
         border-radius: 15px;
         border: 12px ridge #25219d;
+    }
+}
+
+@media (max-width: 768px) {
+    #desktopRedirect {
+        display: none;
     }
 }
 
@@ -89,7 +95,7 @@ a:visited {
 }
   
 body {
-    background-image: url("./assets/bg1.png");
+    background-image: url("../../assets/images-main/bg1.png");
     background-repeat: repeat;
 }
 
@@ -105,7 +111,7 @@ h1, #header {
     width: 85%;
     font-size: 1.5em;
     transform: translateX(-50%);
-    background-image: url("./assets/space.gif");
+    background-image: url("../../assets/images-main/space.gif");
     border: solid 4px #2C211F;
     border-radius: 25px;
     overflow: hidden;
@@ -132,7 +138,7 @@ h1, #header {
     align-items: center;
     top: 2vh;
     left: 50%;
-    height: 162vh;
+    height: 177vh;
     width: 95%;
     transform: translateX(-50%);
     background-color: #005862;
@@ -149,7 +155,7 @@ h1, #header {
     display: flex;
     align-items: center;
     justify-content: center;
-    order: 2;
+    order: 3;
 }
 
 .skeletonFireImg {
@@ -158,17 +164,18 @@ h1, #header {
 }
 
 #headerImg {
-    width: 50vw;
+    margin-top: 2vh;
+    width: 90%;
 }
 
 #seinfeldFlexContainer {
     position: relative;
     display: flex;
-    top: 21vh;
+    top: 24vh;
     height: auto;
     width: 100%;
     justify-content: center;
-    order: 3;
+    order: 4;
 }
 
 #imgSeinfeld {
@@ -178,7 +185,7 @@ h1, #header {
 
 #mainContent {
     position: relative;
-    top: 25vh;
+    top: 31vh;
     padding: 15px;
     order: 1;
 }
@@ -202,12 +209,25 @@ h1, #header {
     margin: 3vh 0 3vh 0;
 }
 
+#mainContent hr {
+    border: 0;
+    height: 1px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 #nextPage {
     position: relative;
-    top: 22vh;
-    order: 3;
+    top: 25vh;
+    order: 2;
 }
 
 #desktopImgHide {
     display: none !important;
+}
+
+#skeletonFireBox, #nextPage, #seinfeldFlexContainer {
+    width: 100%;
 }

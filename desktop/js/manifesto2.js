@@ -2,11 +2,11 @@ const ids = ['img10', 'img29'];
 const url = "https://youareanidiot.cc"; 
 
 document.getElementById('homeButton').onclick = function() {
-    window.location.href = "https://sharkswithswords.com/main.html";
+    window.location.href = "main.html";
 };
 
 document.getElementById('sitemapButton').onclick = function() {
-    window.location.href = "https://sharkswithswords.com/sitemap.html";
+    window.location.href = "sitemap.html";
 };
 
 ids.forEach(id => {
@@ -43,5 +43,5 @@ window.addEventListener('load', function() {
 document.addEventListener('DOMContentLoaded', function() {
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile)
-    window.location.href = "manifesto2-mobile.html";
+    window.location.href = "../../mobile/html/manifesto2-mobile.html";
 })

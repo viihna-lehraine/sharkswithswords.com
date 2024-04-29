@@ -12,13 +12,13 @@ a:visited {
 
 a:hover {
   color: #78B900;
-  cursor: url("./assets/cursors/gam945.gif"), auto;
+  cursor: url("../../assets/cursors/gam945.gif"), auto;
 }
 
 body {
-  background-image: url("./assets/images-main/bg1.png");
+  background-image: url("../../assets/images-main/bg1.png");
   background-repeat: repeat;
-  cursor: url("./assets/cursors/gam942.gif"), auto;
+  cursor: url("../../assets/cursors/gam942.gif"), auto;
 }
 
 html, body, .container {
@@ -46,7 +46,7 @@ h1, h2 {
 .header {
   font-size: 1.5em;
   margin: 30px 25px 0 25px;
-  background-image: url("./assets/images-main/space.gif");
+  background-image: url("../../assets/images-main/space.gif");
   border: solid 4px #2C211F;
   border-radius: 25px;
   overflow: hidden;

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Seinfeld";
-    src: url("./assets/fonts/seinfeld-font/GiambattistaduemilleOblique-eMzg.ttf") format("truetype");
+    src: url("../../assets/fonts/seinfeld-font/GiambattistaduemilleOblique-eMzg.ttf") format("truetype");
 }
 
 * { color: rgb(15, 10, 0);

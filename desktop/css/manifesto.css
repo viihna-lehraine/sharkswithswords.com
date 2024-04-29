@@ -14,7 +14,7 @@ a:visited {
   
 a:hover {
     color: #78B900;
-    cursor: url("./assets/gam945.gif"), auto;
+    cursor: url("../../assets/cursors/gam945.gif"), auto;
 }
 
 -webkit-scrollbar {
@@ -22,9 +22,9 @@ a:hover {
 }
 
 body {
-    background-image: url("./assets/space.gif");
+    background-image: url("../../assets/images-main/space.gif");
     background-repeat: repeat;
-    cursor: url("./assets/gam942.gif"), auto;
+    cursor: url("../../assets/cursors/gam942.gif"), auto;
 }
 
 #container {

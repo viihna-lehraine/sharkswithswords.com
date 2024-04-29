@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Crang";
-    src: url("./assets/fonts/crang/Crang.ttf") format("truetype");
+    src: url("../../assets/fonts/crang/Crang.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "alttp";
-    src: url("./assets/fonts/alttp/ReturnofGanon.ttf") format("truetype");
+    src: url("../../assets/fonts/alttp/ReturnofGanon.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Seinfeld";
-    src: url("./assets/fonts/seinfeld-font/GiambattistaduemilleOblique-eMzg.ttf") format("truetype");
+    src: url("../../assets/fonts/seinfeld-font/GiambattistaduemilleOblique-eMzg.ttf") format("truetype");
 }
 
 #container {
@@ -19,7 +19,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    background: url("./assets/backgrounds/space.jpeg");
+    background: url("../../assets/backgrounds/space.jpeg");
     background-repeat: repeat;
 }
 
@@ -320,7 +320,7 @@
 
 #krogerbox {
     position: fixed;
-    background-image: url("./assets/krogerTrans.png");
+    background-image: url("../../assets/images-main/krogerTrans.png");
     background-size: contain;
     background-repeat: repeat-x;
     left: 1.5vw;
@@ -331,7 +331,7 @@
 
 #skelefriends {
     position: relative;
-    font-family: Courier New, sans-serif;
+    font-family: 'Courier New', sans-serif;
     font-size: 0.4em;
     font-weight: bold;
     display: flex;
@@ -346,7 +346,7 @@
 }
 
 #cw {
-    font-family: Seinfeld, sans-serif;
+    font-family: 'Seinfeld', sans-serif;
     font-size: 1.4em;
     text-shadow: 4px 4px #ded9ef;
 }

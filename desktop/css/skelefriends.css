@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Seinfeld";
-    src: url("./assets/fonts/seinfeld-font/GiambattistaduemilleOblique-eMzg.ttf") format("truetype");
+    src: url("../../assets/fonts/seinfeld-font/GiambattistaduemilleOblique-eMzg.ttf") format("truetype");
 }
 
 a {
@@ -32,7 +32,7 @@ a:active {
     width: 100vw;
     justify-content: center;
     align-items: last baseline;
-    background-image: url("./assets/skeleton-guitar.gif");
+    background-image: url("../../assets/skeleton-guitar.gif");
     background-repeat: repeat;
     background-color: #101415;
 }

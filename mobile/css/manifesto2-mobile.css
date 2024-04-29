@@ -1,16 +1,16 @@
 @font-face {
     font-family: "ALTTP Reg Font";
-    src: url("./assets/fonts/alttp/ReturnofGanon.ttf") format('truetype');
+    src: url("../../assets/fonts/alttp/ReturnofGanon.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Classic Console";
-    src: url("assets/fonts/classic_console_neue/clacon2.ttf") format('truetype');
+    src: url("../../assets/fonts/classic_console_neue/clacon2.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Airstrike";
-    src: url("assets/fonts/airstrike/airstrikechrome.ttf") format('truetype');
+    src: url("../../assets/fonts/airstrike/airstrikechrome.ttf") format('truetype');
 }
 
 * {
@@ -25,7 +25,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url("assets/purplewaves.jpg");
+    background-image: url("../../assets/images-main/purplewaves.jpg");
     background-size: cover;
     overflow-y: scroll;
 }
@@ -36,7 +36,7 @@
     left: 0;
     height: 3.5vh;
     width: 100%;
-    background-image: url("./assets/glossyhearts.gif");
+    background-image: url("../../assets/images-main/glossyhearts.gif");
     background-repeat: repeat;
     z-index: 2;
 }
