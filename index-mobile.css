@@ -127,11 +127,11 @@ h1, #header {
     align-items: center;
     top: 2vh;
     left: 50%;
-    height: auto;
+    height: 162vh;
     width: 95%;
     transform: translateX(-50%);
     background-color: #005862;
-    border-radius: 5%;
+    border-radius: 17px;
     border: solid 4px #2C211F;
     padding: 2vh 0;
     overflow: display;

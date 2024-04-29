@@ -125,6 +125,6 @@
 
 #cpm {
     position: relative;
-    height: 65vh;
+    height: auto;
     width: 100%;
 }
