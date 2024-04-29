@@ -5,28 +5,34 @@
 1   fix index-mobile.html / .css / .js
 
 
-1   fix links to assets and other pages cross-site
+2   fix favicons [ALL PAGES]
+
+
+3   fix links to assets and other pages cross-site
 
     list finished pages as they are completed here:     index.html / index.css / index.js
 
 
-2   personal detail section on main.html
+4   fix protonmail public key
 
 
-3   fix protonmail public key
+5   personal detail section on main.html
 
 
-4   chatbox on main.html
+6   create RSS feed
 
 
-5   journal5.html
+7   chatbox on main.html
 
 
-6   mobile sites:   main -> sitemap -> not-found -> journal -> (journal pages) -> music ->    
+8   journal5.html
+
+
+9   mobile sites:   main -> sitemap -> not-found -> journal -> (journal pages) -> music ->    
                     skelefriends
 
 
-7   clean up and unify HTML/CSS across site
+10   clean up and unify HTML/CSS across site
 
 
 
