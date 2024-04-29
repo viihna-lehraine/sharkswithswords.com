@@ -1,4 +1,4 @@
-const ids = ['img10', 'img29', 'img39'];
+const ids = ['img10', 'img29'];
 const url = "https://youareanidiot.cc"; 
 
 document.getElementById('homeButton').onclick = function() {
@@ -15,7 +15,7 @@ ids.forEach(id => {
     };
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     const homeButton = document.getElementById('homeButton');
     const sitemapButton = document.getElementById('sitemapButton');
 
@@ -32,3 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('mouseleave', handleMouseLeave);
     });
 });
+
+window.addEventListener('load', function() {
+    var img = document.getElementById('img39');
+    img.addEventListener('click', function() {
+        window.location.href = 'rgss.html';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile)
+    window.location.href = "manifesto2-mobile.html";
+})

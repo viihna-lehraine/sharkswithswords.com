@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "Classic Console";
+    src: url("assets/fonts/classic_console_neue/clacon2.ttf") format('truetype');
+}
+
+@keyframes expandButton {
+    from {
+        transform: scale(1);
+        background-color: #cec63e;
+    }
+    to {
+        transform: scale(1.2);
+        background-color: #e84545;
+    }
+}
+
+@media (min-width: 768px) {
+    #desktopImgHide {
+        display: none;
+    }
+    #desktopRedirect {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        text-align: center;
+        padding: 30px;
+        top: 0.5vh;
+        left: 1.5vw;
+        font: 'Classic Console', 'Courier New', 'Courier', monospace, sans-serif;
+        font-size: 3em;
+        font-weight: bold;
+        height: 99vh;
+        width: 97vw;
+        margin: auto;
+        z-index: 100;
+        background-color: #6a65f5;
+        border-radius: 15px;
+        border: 12px ridge #25219d;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+#removeDesktopOverlayButton {
+    height: auto;
+    width: 45vw;
+    margin: auto;
+    font-size: 1.05em;
+    font-family: 'Courier New', sans-serif;
+    font-weight: bold;
+    background-color: #cec63e;
+    color: #0f1459;
+    padding: 15px;
+    border: groove 10px #3e1435;
+    border-radius: 100px;
+}
+
+button:hover {
+    height: auto;
+    width: 45vw;
+    margin: auto;
+    font-size: 1.05em;
+    font-family: 'Courier New', sans-serif;
+    font-weight: bold;
+    background-color: #cec63e;
+    color: #0f1459;
+    padding: 15px;
+    animation: expandButton 0.5s forwards, jitter 0.25s infinie;
+    border: groove 10px #3e1435;
+    border-radius: 100px;
+}
+
+a:link {
+    color: #A7DC44;
+}
+  
+a:visited {
+    color: #668FAE;
+}
+  
+body {
+    background-image: url("./assets/bg1.png");
+    background-repeat: repeat;
+}
+
+h1, #header {
+    text-align: center;
+}
+  
+#header {
+    position: absolute;
+    top: 3.5vh;
+    left: 50%;
+    height: auto;
+    width: 85%;
+    font-size: 1.5em;
+    transform: translateX(-50%);
+    background-image: url("./assets/space.gif");
+    border: solid 4px #2C211F;
+    border-radius: 25px;
+    overflow: hidden;
+}
+  
+#imgresize {
+    width: 30vw;
+    margin: -2vh 0 2vh 0;
+} 
+  
+#container {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+}
+
+#boxmain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 2vh;
+    left: 50%;
+    height: auto;
+    width: 95%;
+    transform: translateX(-50%);
+    background-color: #005862;
+    border-radius: 5%;
+    border: solid 4px #2C211F;
+    padding: 2vh 0;
+    overflow: display;
+}
+  
+#skeletonFireBox {
+    position: relative;
+    top: 22vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+}
+
+.skeletonFireImg {
+    width: 11.5vw;
+    height: auto;
+}
+
+#headerImg {
+    width: 50vw;
+}
+
+#seinfeldFlexContainer {
+    position: relative;
+    display: flex;
+    top: 21vh;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    order: 3;
+}
+
+#imgSeinfeld {
+    width: 50%;
+    height: auto;
+}
+
+#mainContent {
+    position: relative;
+    top: 25vh;
+    padding: 15px;
+    order: 1;
+}
+
+#lastUpdatedBox {
+    position: relative;
+    bottom: 0;
+}
+
+#lastUpdatedBox > p {
+    position: relative;
+    bottom: 0;
+    color: #EFF1F3;
+}
+
+#mainContent > p {
+    color: #0e0e0e;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 3vh 0 3vh 0;
+}
+
+#nextPage {
+    position: relative;
+    top: 22vh;
+    order: 3;
+}
+d
+#desktopImgHide {
+    display: none !important;
+}

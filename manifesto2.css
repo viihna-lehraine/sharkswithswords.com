@@ -310,10 +310,10 @@ img {
 }
 
 #img20 {
-    left: 12.5vw;
-    bottom: 11vh;
+    left: 13vw;
+    bottom: 11.5vh;
     height: 15vh;
-    z-index: 3;
+    z-index: 1;
 }
 
 #img21 {
@@ -437,7 +437,6 @@ img {
     z-index: 2;
 }
 
-/*JESUS PSP */
 #img39 {
     right: 1.25vw;
     top: 5.5vh;

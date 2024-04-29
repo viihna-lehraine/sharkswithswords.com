@@ -111,3 +111,9 @@ h1, h2 {
 .emptyright {
   grid-area: emptyright;
 }
+
+#center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
