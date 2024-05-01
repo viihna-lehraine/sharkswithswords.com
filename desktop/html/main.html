@@ -12,25 +12,24 @@
     </head>
     <body>
         <div id="container">
-            <div class="boxtop"></div>
-            <div class="boxleft">
-                <div class="navbartop">
-                    <h1 class="navtitle">Navigation</h1>
+            <div id="topBannerContainerField"></div>
+            <div id="leftContainerField">
+                <div id="navBarTopBox">
+                    <h1>Navigation</h1>
                 </div>
-                <div class="navbarmain bbox">
-                    <div class="nav1">
-                        <p class="navtext"><a href="../../index.html">Landing Page</a></p>
-                        <p class="navtext"><a href="about.html">About Me</a></p>
-                        <p class="navtext"><a href="manifesto2.html">Manifesto</a></p>
-                        <p class="navtext"><a href="journal.html">Journal</a></p>
-                        <p class="navtext"><a href="coolstuff.html">Cool Stuff</a></p>
-                        <p class="navtext"><a href="links-out.html">Links Out</a></p>
-                        <p class="navtext"><a href="changelog.html">Changelog</a></p>
-                        <p class="navtext"><a href="rgss.html">RGSS</a></p>
-                        <p class="navtext"><a href="contact.html">Contact Info</a></p>
-                        <p class="navtext"><a href="sitemap.html">Sitemap</a></p>
+                <div id="navBarMainBox" class="contentBox">
+                    <div id="navBarTopField">                        
+                        <p class="navBarText"><a href="sitemap.html">Sitemap</a></p>
+                        <p class="navBarText"><a href="about.html">About Me</a></p>
+                        <p class="navBarText"><a href="manifesto2.html">Manifesto<a><p>
+                        <p class="navBarText"><a href="journal/journal.html">Journal</a></p>
+                        <p class="navBarText"><a href="coolstuff.html">Cool Stuff</a></p>
+                        <p class="navBarText"><a href="links-out.html">Links Out</a></p>
+                        <p class="navBarText"><a href="changelog.html">Changelog</a></p>
+                        <p class="navBarText"><a href="contact.html">Contact Info</a></p>
+                        <p class="navBarText"><a href="rgss.html">RGSS</a></p>
                     </div>
-                    <div class="nav2">
+                    <div id="navBarBottomField">
                         <div id="tamanotchiBox">
                             <p><a href="https://tamanotchi.world/3893c"><img src="https://tamanotchi.world/i/3893" alt="It's tamaNOTchi! Click to feed!"></a></p>
                         </div>
@@ -40,33 +39,33 @@
                     </div>
                 </div>
             </div>
-            <div class="skullbox"></div>
-            <div class="boxmain">
-                <div class="mainbox bbox">
+            <div id="skullBox"></div>
+            <div id="mainContentField">
+                <div id="entryBox" class="contentBox">
                     <p>I did a lot of work on the site today. Made a kickass <a href="manifesto2.html">new manifesto page</a> and updated my writings. Things have been going pretty well again. I feel like I'm making progress with JavaScript and HTML/CSS, and I feel like I got my creative juices flowin' today. I'm ridin' that high a little bit. Anyway, I've got several ideas for more updates, which I'll start on very soon. Hope my visitors are doin' well and stayin' happy. Shit feels good again today.</p>
                     <br>
                     <p>Viihna</p>
                     <p>04/28/2024</p>
                 </div>
-                <div class="mainbox bbox">
+                <div id="entryBox" class="contentBox">
                     <p>Today was really fun. Got to see a partial solar eclipse with my family earlier, then we played Cards Against Humanity. I've posted new pages and hope to polish those up soon. Another journal entry probably coming soon. I'm too tired to type it out right now, though.</p>
                     <br>
                     <p>Viihna</p>
                     <p>04/09/2024</p>
                 </div>
-                <div class="mainbox bbox">
+                <div id="entryBox" class="contentBox">
                     <p>It really doesn't look like it rn, but I've been putting in some work here. This site has become my passion project lately - it's just so FUN. Every day I pick up a few new things. Then I turn around and the sun has gone down and it's suddenly 2AM, and I've completed MAYBE one page. It is what it is.</p>
                     <br>
                     <p>Viihna</p>
                     <p>04/01/2024</p>
                 </div>
-                <div class="mainbox bbox">
+                <div id="entryBox" class="contentBox">
                     <p>I'm VERY new to HTML, but I've been poking around with this stuff in my free time lately. I'm slowly doing an overhaul to the visuals on each page, starting with this one. I've added a visitor counter and link to my newly made guestbook. I plan on adding a changelog soon. I'm also trying to make an 'about me' page, among other things. Please bear with me while I figure all of this out. Thanks again for visiting!</p>
                     <br>
                     <p>Viihna</p>
                     <p>3/21/2024</p>
                 </div>
-                <div class="mainbox bbox">
+                <div id="entryBox" class="contentBox">
                     <p>Welcome to my page! I love the community at Neocities, so I decided to join. Math and science have always interested me, but I never took the plunge into computer science. Lately, I've been teaching myself Python, HTML, and CSS. Accordingly, updates to this site very well may not work correctly or at all. If you have any feedback, please feel free to reach out to me (my contact info is on the bottom of the page).</p>
                     <p>I'm also a bassist and (new) singer, and plan to put my first album together in the next 12 months. I'll be sharing updates as they happen, along with links to demos and finished pieces as they become available.</p>
                     <p>I also have a deep interest in tools that help users maintain their privacy, anonymity, and security. I'll be talking about that a lot in future updates and will have a whole branch of my site dedicated to these topics. I'd like to get into the cybersecurity field one day, but for now I'm just learning the basics. Keep that in mind when I talk about that stuff later on.</p>
@@ -75,24 +74,43 @@
                     <p>Viihna</p>
                     <p>3/16/2024</p>
                 </div>
-                <div id="empty"></div>
             </div>
-            <div class="counterbox bbox">
+            <div id="counterBox" class="contentBox">
                 <p>You're visitor #</p>
                 <h2><span id="hitcount"></span></h2>
             </div>
-            <div class="bottombar">
-                    <p>©2024 Viihna (Voidfucker) | <a href="contact.html">Contact Info</a></p>
+            <div id="bioBox" class="contentBox">
+                <div id="bioBoxImgField">
+                    <img src="../../assets/images-main/skeleself1.gif">
+                    <img src="../../assets/images-main/caterpie.gif">
+                </div>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>Viihna</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>30's</td>
+                    </tr>
+                    <tr>
+                        <td>Pronouns</td>
+                        <td>she/her</td>
+                    </tr>
+                </table>
             </div>
-            <div class="botright-box">
+            <div id="bottomBar">
+                    <p>©2024 Viihna (Voidfucker) | <a href="contact.html">Contact Me</a></p>
+            </div>
+            <div id="stampsField">
                 <a href="https://demon-boy.neocities.org"><img src="../../assets/images-main/demon-boy-button.gif" title="This is my boyfriend's page. It would be super cool if you checked it out!" alt="site button for demon-boy on neocities. The button features an autism creature with a devil tail and horns, and flashing rainbow text reading 'Demon Boy!!' against a background of TV static."></a><img src="../../assets/images-main/freespeechforever.gif" alt="button that reads 'Free Speech Forever' beside a rotating blue support ribbon."><p><a href="./zorbeez"><img src="../../assets/images-main/noidea.png" alt="Stamp featuring the Scrubbing Bubbles mascot and the text 'You have no fucking idea what you're up against' on a white background."></a><img src="../../assets/images-main/godscringecomp.png" alt="Stamp with 3D text that reads 'I'm in God's cringe compilation' against a green and teal gradient background."></p>
             </div>
             <img id="motorcycle" src="../../assets/images-main/skeleton-motorcycle.gif" title="Animated GIF of a skeleton on doing a badass wheelie on a motorcycle">
             <img id="strongbadgif" src="../../assets/images-main/strongbad.gif">
+            <img id="corchZ" src="../../assets/images-main/corchZ.gif">
             <img id="seinfeldgif2" src="../../assets/images-main/seinfeld2.gif">
-            <img id="virus" src="../../assets/images-main/isYourPCaVirus.gif">
             <embed height="0" width="0" src="../../assets/music/zorbeez.mp3">
-            <script src="../js/main.js"></script>
         </div>
+        <script src="../js/main.js"></script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 * {
-  font-family: Courier New, sans-serif;
+  font-family: 'Courier New', sans-serif;
 }
 
 a:link {
@@ -88,7 +88,6 @@ h1, h2 {
   background-color: #005862;
   border-radius: 5%;
   border: solid 4px #2C211F;
-  margin: 0 0 2vh 0;
   border-radius: 17px;
 }
 

@@ -1,5 +1,5 @@
 body {
-    font-family: Courier New, sans-serif;
+    font-family: 'Courier New', sans-serif;
     font-weight: bold;
     color: #0E0E0E;
 }
@@ -42,8 +42,8 @@ body {
     border: solid 4px #5AB1BB;
     border-radius: 15px;
     margin: 30px auto 30px auto;
-    height: 600px;
-    width: 900px;
+    height: 82vh;
+    width: 58vw;
     text-align: left;
     top: 0;
     right: 0;
@@ -64,11 +64,47 @@ body {
 }
 
 .titletext {
-    border-bottom: solid 3px #5AB1BB;
-    height: 30px;
-    width: 100%;
-    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    border-bottom: solid 3px #5AB1BB;
+    height: 9vh;
+    width: 100%;
+}
+
+.titletext > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#navButtonsField {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    height: 7vh;
+    width: 100%;
+}
+
+button {
+    height: 80%;
+    width: 6vw;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1.75vh;
+    background-color: #32cb90;
+    border: solid 3px #2c2e2e;
+    border-radius: 5px;
+    box-shadow: 3px 5px 2px 2px rgba(3, 14, 10, 0.5);
+}
+
+#sitemapButton {
+    margin-right: 1vw;
 }
 
 .bottombar {
