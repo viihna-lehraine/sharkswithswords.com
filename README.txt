@@ -1,7 +1,7 @@
     NEXT STEPS
 
 
-1   personal detail section on main.html
+1   fix JS files for mobile and desktop redirects
 
 
 2   chatbox on main.html
@@ -10,18 +10,64 @@
 3   journal5.html
 
 
-4   mobile sites:   main -> sitemap -> not-found -> journal -> (journal pages) -> music ->    
-                    skelefriends
+4   mobile sites:   COMPLETED           index
+                                        main
+                                        manifesto2
+                                        sitemap
+
+                    NOT COMPLETED       about
+                                        alttp
+                                        changelog
+                                        coolstuff
+                                        diceroller
+                                        f
+                                        games
+                                        journal
+                                            journal1
+                                            journal2
+                                            journal3
+                                            journal4
+                                        js-project1
+                                        links-out
+                                        manifesto
+                                        music
+                                        projects
+                                        rgss
+                                        skelefriends
+                                        
 
 
 5   better cursors
 
                     
-5   clean up and unify HTML/CSS across site (REST IN PEPPERONI)
+6   clean up and unify HTML/CSS across site (REST IN PEPPERONI)
 
 
-6   create RSS feed
+7   create RSS feed
 
+
+8   give images descriptive alt text
+
+
+9   learn how to make site accessible for all, then do interface
+
+
+10  try to define images' sizes explicitly
+
+
+11  find licensing info about assets used for site, make credits page. take down images not licensed for me to use. TAKE SCREENSHOTS OF ALL STATED LICENSING
+
+
+12  add more entries to about.html navbar
+
+
+13  move inline script on alttp.html to js file
+
+
+14  coolskeletons.html
+
+
+15  style diceroller.html and js-project1.html
 
 
 --------------------------------------------------------------------------------------------------0
@@ -62,6 +108,11 @@ THINGS TO PRACTICE/CREATE
 
 --------------------------------------------------------------------------------------------------
 
+    PAGE LIST
+
+
+
+---------------------------------------------------------------------------------------------------
 
     DIRECTORY STRUCTURE
 

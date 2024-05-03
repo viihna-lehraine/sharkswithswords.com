@@ -3,23 +3,92 @@
 }
 
 #container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
 }
 
-#underConstruction {
+body {
+    font-family: 'Courier New', sans-serif;
+    font-weight: bold;
+    color: #0E0E0E;
+    background-image: url("../../assets/backgrounds/space.jpeg");
+    background-repeat: repeat;
+}
+  
+a:link {
+    color: #0a1363;
+}
+
+a:visited {
+    color: #871b3d;
+}
+
+#copyrightBoxField {
     position: relative;
     display: flex;
-    font-size: 2.5em;
-    font-weight: bold;
-    height: 100vh;
-    width: 100vw;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-    align-items: center;
     justify-content: center;
+    height: auto;
+    width: 100vw;
+    margin-top: 4vh;
+    margin-bottom: -3vh;
+}
+
+#copyrightBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #d9aab8;
+    width: fit-content;
+    padding: 10px;
+    height: 7vh;
+    background-color: #380a18;
+    border-radius: 30px;
+    border: 8px inset #982649;
+    margin-bottom: 1vh;
+}
+
+#mainContentBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #005862;
+    border: solid 4px #5AB1BB;
+    border-radius: 15px;
+    margin: auto;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    width: 75vw;
+    padding: 5px 7px 5px 7px;
+    text-align: center;
+}
+
+#titleText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-bottom: solid 3px #5AB1BB;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.directoryTitleField {
+    border-bottom: solid 3px #5AB1BB;
+    border-width: 75%;
+}
+
+.directoryField {
+    border-bottom: solid 3px #5AB1BB;
+}
+
+.directoryField:last-of-type {
+    border: none;
 }

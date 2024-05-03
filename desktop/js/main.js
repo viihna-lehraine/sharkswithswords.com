@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', function() {
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if (isMobile)
+  window.location.href = "../../mobile/html/main-mobile.html";
+})
+
 var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
               if (this.readyState == 4 && this.status == 200) {
