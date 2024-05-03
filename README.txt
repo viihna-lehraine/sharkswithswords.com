@@ -1,7 +1,17 @@
+    MAKE SURE DICEROLLER.JS STILL WORKS LMAO
+
+    THEN MOVE COMMENTED OUT JS TO ANOTHER FILE SOMEWHERE ELSE
+
+    -------------------------------------------------------------------------
+
+
     NEXT STEPS
 
 
 1   fix JS files for mobile and desktop redirects
+
+
+2   slow internet / shitty device version of manifesto2
 
 
 2   chatbox on main.html
@@ -68,6 +78,9 @@
 
 
 15  style diceroller.html and js-project1.html
+
+
+16  find unused assets and remove them from assets folder
 
 
 --------------------------------------------------------------------------------------------------0
