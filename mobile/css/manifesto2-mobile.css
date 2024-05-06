@@ -28,6 +28,7 @@
     background-image: url("../../assets/images-main/purplewaves.jpg");
     background-size: cover;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #borderImgTop {

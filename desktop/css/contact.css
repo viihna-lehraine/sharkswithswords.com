@@ -1,22 +1,20 @@
 body {
-    font-family: Courier New, sans-serif;
+    font-family: 'Courier New', sans-serif;
+    font-size: 1.15em;
     font-weight: bold;
+    color: #DDB66A;
 }
 
 a {
     text-decoration: none;
-}
-
-a:link {
-    color: #8d144a;
+    color: #74DE6A;
 }
 
 a:visited {
-    color: #0a064a;
+    color: #6A9ADD;
 }
   
 a:hover {
-    color: #fff700;
     cursor: url("../../assets/cursors/gam945.gif"), auto;
 }
 
@@ -40,9 +38,9 @@ body {
 }
 
 .box {
-    background-color: #005862;
-    border: solid 4px #5AB1BB;
-    border-radius: 15px 15px 15px 15px;
+    background-color: #a51970;
+    border: solid 4px #78AEFA;
+    border-radius: 15px;
 }
 
 .sidebar {
@@ -115,23 +113,20 @@ body {
 
 .bottombar {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 0;
     left: 0;
-    background-color: #005862;
-    height: 34px;
+    font-size: 1.1em;
+    background-color: #a51970;
+    height: 6vh;
     width: 100vw;
-    border: solid 3px #5AB1BB;
+    border: solid 3px #78AEFA;
     border-radius: 0;
     border-bottom: none;
     border-right: none;
     border-left: none;
-}
-
-.center {
-    display: flex;
-    font-size: 0.75em;
-    justify-content: center;
-    text-align: center;
 }
 
 .sidebartop {
@@ -140,7 +135,7 @@ body {
     height: 60px;
     width: 100%;
     padding: 15px 0px 0px 0px;
-    margin:auto;
+    margin: auto;
     border-bottom: solid 3px #5AB1BB;
 }
 

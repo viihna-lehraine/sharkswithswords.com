@@ -19,12 +19,13 @@ body {
     background-repeat: repeat;
 }
   
-a:link {
-    color: #0a1363;
+a {
+    text-decoration: none;
+    color: #74DE6A;
 }
 
 a:visited {
-    color: #871b3d;
+    color: #6A9ADD;
 }
 
 #copyrightBoxField {
@@ -56,8 +57,8 @@ a:visited {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #005862;
-    border: solid 4px #5AB1BB;
+    background-color: #a51970;
+    border: solid 4px #78AEFA;
     border-radius: 15px;
     margin: auto;
     height: auto;
@@ -74,19 +75,19 @@ a:visited {
     align-items: center;
     text-align: center;
     padding: 10px;
-    border-bottom: solid 3px #5AB1BB;
+    border-bottom: solid 3px #78AEFA;
     height: auto;
     width: 100%;
     justify-content: center;
 }
 
 .directoryTitleField {
-    border-bottom: solid 3px #5AB1BB;
+    border-bottom: solid 3px #78AEFA;
     border-width: 75%;
 }
 
 .directoryField {
-    border-bottom: solid 3px #5AB1BB;
+    border-bottom: solid 3px #78AEFA;
 }
 
 .directoryField:last-of-type {

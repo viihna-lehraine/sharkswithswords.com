@@ -1,11 +1,31 @@
+LEFT OFF AT JOURNAL DIRECTORY MOBILE
+
+
+-------------------------------------------------------------------------
+
+
+    
+    
     MAKE SURE DICEROLLER.JS STILL WORKS LMAO
 
     THEN MOVE COMMENTED OUT JS TO ANOTHER FILE SOMEWHERE ELSE
 
-    -------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 
     NEXT STEPS
+
+
+1   query client for browser type. send different css rules per browser
+
+
+3   afer mobile sites get made, query more viewport sizes and send different css rules
+
+
+1   turn sitemap into nested directory, with links to all non-hidden pages
+
+
+1   warning page about bright, flashing colors as index.html
 
 
 1   fix JS files for mobile and desktop redirects
@@ -20,19 +40,13 @@
 3   journal5.html
 
 
-4   mobile sites:   COMPLETED           index
-                                        main
-                                        manifesto2
-                                        sitemap
-
-                    NOT COMPLETED       about
-                                        alttp
+4   mobile sites:   NOT COMPLETED       alttp
                                         changelog
                                         coolstuff
                                         diceroller
                                         f
                                         games
-                                        journal
+                                        journal directory
                                             journal1
                                             journal2
                                             journal3
@@ -49,6 +63,12 @@
 
 5   better cursors
 
+
+6   change as many absolutely positioned elements to relative as possible
+
+
+7   replace all px-defined positioning with vh/vw or similar units
+
                     
 6   clean up and unify HTML/CSS across site (REST IN PEPPERONI)
 
@@ -60,6 +80,9 @@
 
 
 9   learn how to make site accessible for all, then do interface
+
+
+10  improve color schemes across site. make sure to set a and a:visited colors
 
 
 10  try to define images' sizes explicitly
@@ -81,6 +104,9 @@
 
 
 16  find unused assets and remove them from assets folder
+
+
+17  optimize
 
 
 --------------------------------------------------------------------------------------------------0

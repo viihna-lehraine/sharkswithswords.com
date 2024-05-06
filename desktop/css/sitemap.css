@@ -3,19 +3,20 @@ body {
     font-weight: bold;
     color: #0E0E0E;
 }
-  
-a:link {
-    color: #0a1363;
+
+a {
+    text-decoration: none;
+    color: #74DE6A;
 }
 
 a:visited {
-    color: #871b3d;
+    color: #6A9ADD;
 }
   
 a:hover {
-    color: #a8ed27;
     cursor: url("../../assets/cursors/gam945.gif"), auto;
 }
+
 
 #container {
     position: fixed;
@@ -38,8 +39,8 @@ body {
 
 .sitemapbox {
     position: relative;
-    background-color: #005862;
-    border: solid 4px #5AB1BB;
+    background-color: #a51970;
+    border: solid 4px #78AEFA;
     border-radius: 15px 15px 15px 15px;
     margin: 10vh auto 10vh auto;
     height: fit-content;
@@ -48,7 +49,7 @@ body {
 }
 
 .titletext {
-    border-bottom: solid 3px #5AB1BB;
+    border-bottom: solid 3px #78AEFA;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,26 +61,25 @@ body {
 }
 
 .directoryTitleField {
-    border-bottom: solid 3px #5AB1BB;
+    border-bottom: solid 3px #78AEFA;
 }
 
 .mainText {
-    border-bottom: solid 3px #5AB1BB;
+    border-bottom: solid 3px #78AEFA;
     padding: 2vh 0 2vh 0;
 }
 
 #bottomBar {
     position: fixed;
     display: flex;
-    color: #e0ddeb;
     bottom: 0;
     left: 0;
-    height: 5vh;
+    height: 6vh;
     width: 100%;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    background-color: #005862;
-    border-top: solid 4px #5AB1BB;
+    background-color: #a51970;
+    border-top: solid 4px #78AEFA;
     z-index: 2;
 }
