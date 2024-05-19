@@ -2,24 +2,119 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "ALTTP Reg Font";
+    src: url("../../assets/fonts/alttp/ReturnofGanon.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "8 Bit Arcade";
+    src: url("../../assets/fonts/8_bit_arcade/8-bit-Arcade-In.ttf") foramt ('truetype');
+}
+
+body {
+    font-family: "ALTTP Reg Font", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
 #container {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/images-main/clouds1.jpg");
+    background-size: cover;
+    overflow-y: scroll;
 }
 
-#underConstruction {
+#topButtonBarField {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+}
+
+.linkBox {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    font-size: 1.25em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../../assets/images-main/whiteBricks.jpg");
+    background-size: 300px;
+    border-bottom: solid 2px #608991;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px rgba(70, 23, 35, 0.5);
+    font-family: "8 Bit Arcade", monospace;
+    z-index: 2;
+}
+
+.linkBox1-3 {
+    border-right: solid 2px #608991;
+}
+
+#copyrightField {
     position: relative;
     display: flex;
-    font-size: 2.5em;
-    font-weight: bold;
-    height: 100vh;
-    width: 100vw;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-    align-items: center;
     justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+}
+
+#copyrightBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fef7fe;
+    width: fit-content;
+    padding: 10px;
+    height: 7vh;
+    background-color: #18060b;
+    border-radius: 3px;
+    border: 6px inset #cdcdcd;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-shadow: 1px 3px 2px rgba(79, 25, 102, 0.4);
+    box-shadow: 1px 6px 2px rgba(79, 25, 102, 0.7);
+
+}
+
+#bannerImgField {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 100%; 
+    margin-top: 2vh;
+    
+}
+
+#bannerImg {
+    height: 130px;
+    width: auto;
+    border: 9px ridge #90ceda;
+    border-radius: 3px;
+}
+
+.mainContentBox {
+    height: fit-content;
+    width: 80%;
+    background-color: #87ceeb;
+    border: 5px solid #1d223e;
+    margin: 2vh auto 2vh auto;
+    border-radius: 12px;
+    padding: 10px 20px 10px 20px;
 }

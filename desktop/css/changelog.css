@@ -46,7 +46,7 @@ a {
 #bottom {
     position: fixed;
     display: flex;
-    font-family: Courier New, sans-serif;
+    font-family: 'Courier New', sans-serif;
     font-weight: bold;
     text-align: center;
     bottom: 0;
