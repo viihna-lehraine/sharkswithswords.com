@@ -205,10 +205,12 @@ button {
     position: relative;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 100vw;
 }
 
 .entryBox {
     height: fit-content;
     width: 90vw;
+    margin: 0 auto 0 auto;
 }

@@ -2,24 +2,61 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Seinfeld";
+    src: url("../../assets/fonts/seinfeld-font/GiambattistaduemilleOblique-eMzg.ttf") format("truetype");
+}
+
+a {
+    color: #c146a4;
+    text-decoration: none;
+}
+
 #container {
-    position: absolute;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    background-image: url("../../assets/images-main/wacky.jpeg");
 }
 
-#underConstruction {
+img {
+    border: 10px ridge #6c6caf;
+    border-radius: 5px;
+    margin-bottom: 4vh;
+}
+
+#backBoxField {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 1.5vh;
+    left: 0;
+    height: fit-content;
+    width: 100%;
+}
+
+#backBox {
     position: relative;
     display: flex;
-    font-size: 2.5em;
-    font-weight: bold;
-    height: 100vh;
-    width: 100vw;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 7vh;
+    width: 25vw;
+    font-size: 2em;
+    background-color: #abfdfc;
+    border: 4px solid #161e69;
+    border-radius: 10px;
+    font-family: 'Seinfeld', 'Courier New', monospace;
+    text-shadow: 1px 1px #430735;
 }
+
+/*
+#f9fe9c
+*/
