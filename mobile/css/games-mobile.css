@@ -2,24 +2,122 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "RetroGaming";
+    src: url("../../assets/favicons/fonts/retro_gaming/Retro Gaming.ttf") format('truetype');
+}
+
+body {
+    font-family: 'RetroGaming', 'Courier New', monospace;
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+    color: #9b5d0c;
+}
+
 #container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    background-image: url("../../assets/images-main/reflection.jpg");
 }
 
-#underConstruction {
+
+#copyrightField {
     position: relative;
     display: flex;
-    font-size: 2.5em;
-    font-weight: bold;
-    height: 100vh;
-    width: 100vw;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-    align-items: center;
     justify-content: center;
+    height: auto;
+    width: 100vw;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
+
+#copyrightBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    width: fit-content;
+    padding: 10px;
+    height: 7vh;
+    background-color: #fefcfd;
+    border-radius: 30px;
+    border: 8px inset #b58fdd;
+    margin-bottom: 1vh;
+}
+
+#topButtonBarField {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+}
+
+.linkBox {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    font-size: 1.25em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #dc9bef;
+    border-bottom: solid 2px #a70d4a;
+    border-radius: 0 0 10px 10px;
+    text-shadow: 1px 1px rgba(70, 23, 35, 0.5);
+    box-shadow: 1px 1px rgba(70, 23, 35, 0.5);
+    z-index: 2;
+}
+
+.linkBox1-3 {
+    border-right: solid 2px #a70d4a;
+}
+
+#titleBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    width: 75%;
+    margin: 0 auto 7vh auto;
+    background-color: #8fecf8;
+    border: 6px inset #054844;
+}
+
+#gameImageBox1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 7px inset #153c42;
+    border-radius: 6px;
+    width: 85%;
+    height: 30vh;
+    background-image: url("../../assets/images-main/alttp2.png");
+    background-size: contain;
+    margin: 0 auto 0 auto;
+}
+.gameTitleBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    background-color: #daabe9;
+    border: 4px ridge #153c42;
+    border-radius: 6px;
+    text-shadow: 2px 2px #e2d0e3;
 }

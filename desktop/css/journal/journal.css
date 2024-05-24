@@ -105,6 +105,10 @@ body {
     border-bottom: solid 3px #5AB1BB;
 }
 
+.sidebarmain {
+    padding-bottom: 15px;
+}
+
 .navtextmain {
     font-size: 1.75em;
     text-align: center;
