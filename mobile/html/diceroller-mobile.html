@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>404</title>
-        <link rel="stylesheet" href="diceroller-mobile.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <title>Dice Roller</title>
+        <link rel="stylesheet" href="../css/diceroller-mobile.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../../site.webmanifest">
         <meta charset="UTF-8">
         <meta name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     </head>
     <body>
         <div id="container">
-            <div id="underConstruction">
-                <h3>Sorry, under construction! Mobile site coming soon!</h3>
+            <div id="topButtonBarField">
+                <div class="linkBox linkBox1-3"><a href="home-mobile.html">Home</a></div>
+                <div class="linkBox linkBox1-3"><a href="sitemap-mobile.html">Sitemap</a></div>
+                <div class="linkBox linkBox1-3"><a href="about-mobile.html">About</a></div>
+                <div class="linkBox linkBox1-3"><a href="contact-mobile.html">Contact</a></div>
+            </div>
+            <div id="copyrightField">
+                <div id="copyrightBox" class="box">
+                    ©2024 Viihna (Voidfucker)
+                </div>
+            </div>
+            <div id="titleBoxField">
+                <div id="titleBox">
+                    <h2>Dice Roller</h2>
+                </div>
+            </div>
+            <div id="contentField">
+                <label id="diceNumberLabel">How many <b>dice</b>?</label>
+                <input type="text" id="howManyDiceInput"><br><br>
+                <label id="diceSideNumberLabel">How many <b>sides</b>?</label>
+                <input type="text" id="howManySidesInput"><br><br>
+                <label id="diceModifierLabelAddSubtract">Add a <b>modifier</b> to the total <em>(can be 0)</em></label>
+                <input type="text" id="diceModifierInputAddSubtract"><br><br>
+                <label id="diceModifierLabel2">Multiply by a <b>modifier</b>?</label>
+                <input type="text" id="diceModifierInputMultiply"><br><br>
+                <button type="text" id="submitButtonDice">submit</button>
+                <button type=text" id="resetButtonDice">reset</button>
+                <button type="text" id="resetInputFieldsDice">clear</button><br><br>
+                <label id="diceResultTotal">Result (Total): </label><br><br>
+                <label id="diceResultIndividual">Result (Individual Dice): </label>
             </div>
         </div>
+        <script src="../../desktop/js/diceRoller.js"></script>
     </body>
+</html>

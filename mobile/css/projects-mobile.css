@@ -2,24 +2,109 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #0909ee;
+}
+
 #container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
 }
 
-#underConstruction {
+#topButtonBarField {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+}
+
+.linkBox {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    font-size: 1.35em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: solid 2px #000000;
+    z-index: 2;
+}
+
+.linkBox1-3 {
+    border-right: solid 2px #000000;
+}
+
+#copyrightField {
     position: relative;
     display: flex;
-    font-size: 2.5em;
-    font-weight: bold;
-    height: 100vh;
-    width: 100vw;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-    align-items: center;
     justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+}
+
+#copyrightBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    height: 7vh;
+    margin: 2vh 0 1vh 0;
+}
+
+.box {
+    border: 2px solid black;
+}
+
+#disclaimerBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh auto 3vh auto;
+    width: 90%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.entryBoxTitleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 45%;
+    margin-top: 2vh;
+    margin-left: 1vh;
+    margin-bottom: 0;
+}
+
+.entryBoxContentBox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    height: fit-content;
+    width: 95%;
+    margin-top: 0;
+    margin-left: 1vh;
+    margin-bottom: 2vh;
+    padding: 12px;
+}
+
+.entryBoxHeaderBox {
+    position: relative;
+    display: inline;
+    margin-left: 2vh;
+    text-align: left;
+    margin-left: 0;
 }

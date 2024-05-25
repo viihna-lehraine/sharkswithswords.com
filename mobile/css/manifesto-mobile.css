@@ -1,5 +1,12 @@
 * {
     box-sizing: border-box;
+    font-family: 'Courier New' monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #231997;
+    text-shadow: 1px 1px 0 #948dd5;
 }
 
 #container {
@@ -8,18 +15,103 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
+    background-image: url("../../assets/images-main/img29.png");
+    background-repeat: repeat;
+    color: #020115;
 }
 
-#underConstruction {
+#topButtonBarField {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+}
+
+.linkBox {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    font-size: 1.35em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #32cb90;
+    border-bottom: solid 4px #052e2e;
+    border-radius: 0 0 7px 7px;
+    text-shadow: 1px 1px rgba(70, 23, 35, 0.5);
+    box-shadow: 0 3px 2px rgba(224, 234, 230, 0.841);
+    z-index: 2;
+}
+
+.linkBox1-3 {
+    border-right: solid 4px #052e2e;
+}
+
+#copyrightField {
     position: relative;
     display: flex;
-    font-size: 2.5em;
-    font-weight: bold;
-    height: 100vh;
-    width: 100vw;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-    align-items: center;
     justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 9vh;
+    margin-bottom: 3vh;
+}
+
+#copyrightBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: #fef7fe;
+    width: fit-content;
+    padding: 10px;
+    height: 7vh;
+    background-color: #211887;
+    border-radius: 30px;
+    border: 8px inset #32cb90;
+    margin-bottom: 1vh;
+    text-shadow: 1px 3px 0 #08042b;
+    box-shadow: 1px 4px 1px #d6e3dc;
+}
+
+#titleBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: fit-content;
+    width: 48vw;
+    margin: 2vh auto 2vh auto;
+    border: 5px inset #6cd5e1;
+    background-color: #005862;
+    border-radius: 25px;
+    box-shadow: 1px 4px 1px #d8e0d4;
+    text-shadow: 1px 1px 0 #d1caef;
+}
+
+#contentBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 87.5%;
+    margin: 0 auto 0 auto;
+    border: 5px inset #6cd5e1;
+    background-color: #005862;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px; 
+    margin-bottom: 5vh;
+}
+
+#contentBox > h3 {
+    text-align: center;
 }
