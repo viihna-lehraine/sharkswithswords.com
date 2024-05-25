@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    color: #dbcde7;
+}
+
+@font-face {
+    font-family: "ALTTP Reg Font";
+    src: url("../../assets/fonts/alttp/ReturnofGanon.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Classic Console";
+    src: url("../../assets/fonts/classic_console_neue/clacon2.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Airstrike";
+    src: url("../../assets/fonts/airstrike/airstrikechrome.ttf") format('truetype');
+}
+
+body {
+    cursor: url("../../assets/cursors/mj.cur"), auto;
+}
+
+a {
+    color: #c916ab;
+}
+
+#container {
+    position: fixed;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.7fr 1.3fr 0.7fr; 
+    grid-template-rows: 0.1fr 0.3fr 0.1fr 0.75fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      ". mainContentTitleField ."
+      ". . ."
+      ". mainContentField ."
+      ". . ."; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/images-main/purplewaves.jpg");
+    background-size: cover;
+}
+
+#borderImgTop {
+    position: absolute;
+    top: 0.5vh;
+    left: 0;
+    height: 4vh;
+    width: 100%;
+    background-image: url("../../assets/images-main/glossyhearts.gif");
+    background-repeat: repeat;
+}
+
+.contentBox {
+    background-color: #19052a;
+    border: 6px ridge #b275e4;
+    border-radius: 8px;
+}
+
+#mainContentTitleField {
+    grid-area: mainContentTitleField;
+    display: flex;
+    color: #dbcde7;
+    font-family: "Airstrike", 'Courier New', monospace;
+    font-size: 2em;
+    width: 70%;
+    margin: 5vh auto 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #19052a;
+    border: 6px ridge #b275e4;
+    border-radius: 15px;
+}
+
+#mainContentField {
+    grid-area: mainContentField;
+    font-family: "Classic Console", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+
+
+.button {
+    position: absolute;
+    font-family: "ALTTP Reg Font", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #5f09ab;
+    height: 7.5vh;
+    width: 8vw;
+    top: 24vh;
+    z-index: 3;
+    text-align: center;
+    border: 4px inset #670cb6;
+    background-color: #d9aece;
+    border-radius: 25px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    box-shadow: 2px 8px 1px #150127d6;
+}
+
+.button:hover {
+    transition: #d9aece 0.5s ease;
+    animation-name: colorPulse 1s infinite alternate;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    cursor: url("../../assets/cursors/gam1184.cur"), auto;
+}
+
+.button-animate {
+    animation: expandButton 1s infinite alternate;
+    transform: scale(1.2);
+    background-color: #e31572;
+}
+
+#homeButton {
+    float: left;
+    left: 30vw;
+}
+
+#sitemapButton {
+    float: right;
+    right: 30vw;
+}
+
+#bottomBar {
+    position: fixed; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 6vh;
+    width: 100%;
+    border-top: 6px ridge #b275e4;
+    background-color: #19052a;
+}
+
+.innerContentBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    min-height: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 100%;
+}
+
+.innerContentBox > p:first-of-type {
+    font-size: 1.25em;
+    margin-bottom: 0;
+}
+
+.innerContentBox > p:last-of-type {
+    font-size: 1em;
+}

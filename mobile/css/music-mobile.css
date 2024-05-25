@@ -2,24 +2,228 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Crang";
+    src: url("../../assets/fonts/crang/Crang.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "alttp";
+    src: url("../../assets/fonts/alttp/ReturnofGanon.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Seinfeld";
+    src: url("../../assets/fonts/seinfeld-font/GiambattistaduemilleOblique-eMzg.ttf") format("truetype");
+}
+
+a {
+    text-decoration: none;
+    color: #3d3db9;
+    text-shadow: 2px 2px 1px #06011bd3;
+}
+
 #container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
+    background: url("../../assets/backgrounds/space.jpeg");
+    background-repeat: repeat;
 }
 
-#underConstruction {
+#topButtonBarField {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+}
+
+.linkBox {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Crang', 'Courier New', monospace;
+    background-color: #F481C6;
+    border-bottom: 4px solid #101757;
+    border-radius: 0 0 10px 10px;
+    text-shadow: 1px 1px rgba(70, 23, 35, 0.5);
+    box-shadow: 1px 1px rgba(70, 23, 35, 0.5);
+    z-index: 2;
+}
+
+.linkBox1-3 {
+    border-right: 4px solid #101757;
+}
+
+#copyrightField {
     position: relative;
     display: flex;
-    font-size: 2.5em;
-    font-weight: bold;
-    height: 100vh;
-    width: 100vw;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-    align-items: center;
     justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 9.5vh;
+    margin-bottom: 2vh;
+}
+
+#copyrightBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #44092c;
+    width: fit-content;
+    padding: 10px;
+    height: 7vh;
+    background-color: #d4d6ea;
+    border-radius: 30px;
+    border: 8px inset #172ad1;
+    margin-bottom: 1vh;
+    font-family: 'Seinfeld', 'Courier New', monospace;
+    font-weight: bold;
+    box-shadow: 1px 6px 1px rgba(220, 215, 223, 0.761);
+}
+
+.content {
+    display: relative;
+    font-family: 'alttp', 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+    height: fit-content;
+    width: 85%;
+    padding: 10px 20px 5px 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #0ED9F0;
+    margin: 2vh auto 6vh auto;
+    border: 8px ridge #313A87;
+    border-radius: 8px;
+    color: #040927;
+}
+
+.cw {
+    font-family: 'Seinfeld', 'Courier New', monospace;
+    font-size: 1.4em;
+    text-shadow: 2px 2px #ded9ef;
+    text-align: center;
+}
+
+.titleBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F481C6;
+    box-shadow: 1px 2px rgb(239, 234, 238);
+    border-style: ridge;
+    border-radius: 8px;
+}
+
+#titleBox0, #titleBox1 {
+    font-family: 'Seinfeld', 'Courier New', monospace;
+    color: #040927;
+    text-shadow: 1px 1px white;
+    height: fit-content;
+    width: 50%;
+    margin: 3vh auto 1.5vh auto;
+}
+
+#titleBox2 {
+    height: 7vh;
+    width: 45%;
+    margin: 15vh auto 1.5vh auto;
+}
+
+#titleBox3 {
+    height: 7vh;
+    width: 65%;
+    margin: 5vh auto 1.5vh auto;
+}
+
+#titleBox4 {
+    height: 7vh;
+    width: 45%;
+    margin: 5vh auto 1.5vh auto;
+}
+
+#titleBox5 {
+    height: 7vh;
+    width: 45%;
+    margin: 5vh auto 1.5vh auto;
+}
+
+#titleBox6 {
+    height: 7.2vh;
+    width: 38%;
+    margin: 5vh auto 1.5vh auto;
+}
+
+#titleBox7 {
+    font-family: 'Seinfeld', 'Courier New', monospace;
+    color: #040927;
+    text-shadow: 1px 1px white;
+    height: 7vh;
+    width: 80%;
+    margin: 5vh auto 1.5vh auto;
+}
+
+#titleBox8 {
+    height: 7.25vh;
+    width: 50%;
+    margin: 5vh auto 1.5vh auto;
+}
+
+#titleBox9 {
+    height: 7.25vh;
+    width: 50%;
+    margin: 5vh auto 1.5vh auto;
+}
+
+#titleBox10 {
+    height: 7.45vh;
+    width: 38%;
+    margin: 5vh auto 1.5vh auto;
+}
+
+#titleBox11 {
+    height: 7.45vh;
+    width: 34%;
+    margin: 5vh auto 1.5vh auto;
+}
+
+#img2 {
+    height: 3.75vh;
+}
+
+#img3 {
+    height: 7vh;
+}
+
+#img4 {
+    height: 6.75vh;
+}
+
+#img5 {
+    height: 6vh;
+}
+
+#img6 {
+    height: 3vh;
+}
+
+#img7 {
+    height: 6.5vh;
+}
+
+#img8 {
+    height: 6vh;
 }
