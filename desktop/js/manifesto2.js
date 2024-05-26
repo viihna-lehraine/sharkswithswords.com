@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile)
+    window.location.href = "../../mobile/html/manifesto2-mobile.html";
+  })
+
 const ids = ['img10', 'img29'];
 const url = "https://youareanidiot.cc"; 
 

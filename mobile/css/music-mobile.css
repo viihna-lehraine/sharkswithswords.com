@@ -200,6 +200,33 @@ a {
     margin: 5vh auto 1.5vh auto;
 }
 
+.imageField {
+    position: relative;
+    display: flex;
+    margin: 2vh auto 2vh auto;
+    height: 18vh;
+    width: 97.5%;
+}
+
+.imageFieldImage {
+    height: 100%;
+    width: calc(100% / 3);
+    border: 4px inset #313A87;
+}
+
+.imageFieldImage2 {
+    height: 100%;
+    width: calc(200% / 3);
+    border: 4px inset #313A87;
+}
+
+.imageFieldImageFile {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
 #img2 {
     height: 3.75vh;
 }

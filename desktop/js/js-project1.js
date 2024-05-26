@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile)
+    window.location.href = "../../mobile/html/js-project1-mobile.html";
+  })
+
+
+// begin main functions
+
 document.getElementById('hypotenuseSubmitButton').onclick = function() {
 
     rightTriangleSideA = document.getElementById("rightTriangleSideATextBox").value;
