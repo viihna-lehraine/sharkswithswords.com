@@ -158,7 +158,6 @@ body {
 
 img {
     position: fixed;
-    z-index: 3;
 }
 
 #img1 {
@@ -179,6 +178,7 @@ img {
 #img4 {
     left: 1275px;
     top: 230px;
+    z-index: 1;
 }
 
 #img5 {
