@@ -52,17 +52,17 @@ h1, h2 {
   overflow: hidden;
 }
 
-#imgtop {
+.imgtop {
   width: 80px;
   height: 80px;
 }
 
-#imgresize1 {
+.imgresize1 {
   width: 30%;
   height: auto;
 } 
 
-#imgresize2 {
+.imgresize2 {
   width: 15%;
   height: auto;
   padding: 0 0 4vh 0;
@@ -78,9 +78,9 @@ h1, h2 {
   grid-auto-flow: row;
   justify-items: stretch;
   grid-template-areas: 
-    ". . ."
-    ". boxmain ."
-    ". . .";
+      ". . ."
+      ". boxmain ."
+      ". . .";
 }
 
 .boxmain {
