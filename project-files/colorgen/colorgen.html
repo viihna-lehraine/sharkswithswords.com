@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Palette Generator</title>
-        <link rel="stylesheet" href="../css/color-palette-generator.css">
+        <title>ColorGen - Color Palette Generator</title>
+        <link rel="stylesheet" href="/project-files/colorgen/src/app.css">
         <meta charset="UTF-8">
         <meta name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/asets/favicons/favicon-16x16.png">
     </head>
     <body>
         <div id="container">
@@ -15,7 +18,7 @@
                         <div class="palette-form-column">
                             <label for="palette-type-options">Palette Type</label>
                             <select id="palette-type-options">
-                                <option value="1">Random Color</option>
+                                <option value="1">Random</option>
                                 <option value="2">Complementary</option>
                                 <option value="3">Triadic</option>
                                 <option value="4">Tetradic</option>
@@ -23,6 +26,7 @@
                                 <option value="6">Analogous</option>
                                 <option value="7">Hexadic</option>
                                 <option value="8">Diadic</option>
+                                <option value="9">Monochromatic</option>
                             </select>
                         </div>
                         <div class="palette-form-column">
@@ -47,7 +51,21 @@
                             <input id="limitLightCheckbox" type="checkbox">
                         </div>
                     </div>
-                    <div id="palette-form-row">
+                    <div class="palette-form-row">
+                        <div class="popup">
+                            <button id="custom-color-button" class="popup">Custom Color</button>
+                            <div class="popuptext" id="popup-div">
+                                <div class="popup-div-row">
+                                    <input type="color" id="custom-color-picker" value="#EA5050">
+                                </div>
+                                <div class="popup-div-row">
+                                    <button id="apply-color-button">Apply</button>
+                                    <button id="clear-color-button">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="palette-form-row">
                         <button id="generate-button" type="submit">Generate</button>
                     </div>
                 </form>  
@@ -63,7 +81,7 @@
                     <div class="button-box-slice">
                         <button id="hsv-conversion-button">HSV</button>
                     </div>
-                    <div id="button-row-title" class="button-box-slice">
+                    <div id="button-row-title">
                         <p>Conversion Buttons</p>
                     </div>
                     <div class="button-box-slice">
@@ -79,6 +97,6 @@
             </div>
             <div id="palette-row"></div>
         </div>
-        <script src="../js/color-palette-generator.js"></script>
+        <script type="module" src="./src/app.js"></script>
     </body>
 <html>

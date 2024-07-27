@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #c5d8c8;
     color: #333333;
     font-family: Arial, sans-serif;
 }
@@ -71,6 +71,7 @@ body {
     height: 100vh;
     width: 100vw;
     align-items: center;
+    overflow-x: hidden;
 }
 
 label {
@@ -82,7 +83,7 @@ label {
     display: flex;
     flex-direction: column;
     padding: 10px 25px;
-    margin-top: 3vh;
+    margin-top: 2vh;
     justify-content: center;
     text-align: center;
     background-color: #FFFFFF;
@@ -99,19 +100,33 @@ label {
     color: #555555;
 }
 
-#generate-button {
-    background-color: #4CAF50;
-    color: #FCFCFC;
+#generate-button, #custom-color-button {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 0.9em;
+    margin: 0 2px;
     cursor: pointer;
     border: 1px solid #1F1F21;
     border-radius: 5px;
 }
+
+#generate-button {
+    background-color: #4CAF50;
+    color: #FCFCFC;
+}
+
+#custom-color-button {
+    background-color: #F8B8F5;
+    color: #0E0E0E;
+}
+
+
+#custom-color-button:hover {
+    background-color: #D87ED5;
+}
+
 
 #generate-button:hover, .button-box-slice > button:hover {
     background-color: #3c803f;
@@ -120,12 +135,11 @@ label {
 #palette-row {
     position: relative;
     display: flex;
-    top: 1vh;
+    top: 12px;
     height: fit-content;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    padding: 5px 0;
 }
 
 #button-row-title {
@@ -146,11 +160,11 @@ label {
 #button-row {
     position: relative;
     display: flex;
-    top: 0.5vh;
+    top: 0;
     flex-wrap: wrap;
     height: fit-content;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -198,7 +212,7 @@ label {
     position: relative;
     display: flex;
     height: 25vh;
-    width: 20vw;
+    width: 13vw;
     flex-direction: column;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
@@ -239,7 +253,7 @@ label {
     height: fit-content;
     width: 100%;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 5px;
 }
 
@@ -315,4 +329,63 @@ label {
 .tooltip.show .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup-div {
+    flex-direction: column;
+}
+
+.popup-div-row:first-child {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+.popup-div-row:nth-child(2) {
+    display: flex;
+    padding-bottom: 3px;
+    justify-content: space-around;
+}
+
+.popup .popuptext {
+    position: absolute;
+    visibility: hidden;
+    width: 160px;
+    background-color: #EFEFEF;
+    color: #101010;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 6px;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #505050 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
