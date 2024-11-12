@@ -1,5 +1,5 @@
 {
-    "name": "",
+    "name": "sharkswithswords.com",
     "short_name": "",
     "icons": [{
         "src":"./assets/favicons/android-chrome-192x192.png",
@@ -9,7 +9,7 @@
             "sizes":"512x512",
             "type":"image/png"
         }],
-    "theme_color":"#ffffff",
-    "background_color":"#ffffff",
+    "theme_color":"#5BCEFAFF",
+    "background_color":"#F5A9B8FF",
     "display":"standalone"
 }
