@@ -1,328 +1,323 @@
 #container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
-    cursor: url("../../assets/cursors/gam942.gif"), auto;
-    font-family: 'Courier New', sans-serif;
-    font-weight: bold;
-    position: fixed;
-    color: #982649;
-    background-image: url("../../assets/images-main/cutesharks2.jpg");
-    background-repeat: repeat;
+  cursor: url("../../assets/cursors/gam942.gif"), auto;
+  font-family: "Courier New", sans-serif;
+  font-weight: bold;
+  color: #982649;
+  background-image: url("../../assets/images-main/cutesharks2.jpg");
+  background-repeat: repeat;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:link {
-    color: #2e198c;
+  color: #2e198c;
 }
 
 a:visited {
-    color: #FAC16A;
+  color: #fac16a;
 }
-  
+
 a:hover {
-    color: #112775;
-    cursor: url("./assets/gam945.gif"), auto;
+  color: #112775;
+  cursor: url("./assets/gam945.gif"), auto;
 }
 
 .contentBox {
-    background-color: #FF7E9E;
-    border: solid 6px #982649;
-    border-radius: 20px;
+  background-color: #ff7e9e;
+  border: solid 6px #982649;
+  border-radius: 20px;
 }
 
 #bottomBar {
-    position: fixed;
-    display: flex;
-    color: #e0ddeb;
-    bottom: 0;
-    left: 0;
-    height: 5vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: #4b8bc7;
-    border-top: solid 4px #982649;
-    z-index: 2;
+  position: fixed;
+  display: flex;
+  color: #e0ddeb;
+  bottom: 0;
+  left: 0;
+  height: 5vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #4b8bc7;
+  border-top: solid 4px #982649;
+  z-index: 2;
 }
 
 #stampsField {
-    position: absolute;
-    bottom: 5vh;
-    right: 0.25vw;
-    height: auto;
-    width: auto;
+  position: absolute;
+  bottom: 5vh;
+  right: 0.25vw;
+  height: auto;
+  width: auto;
 }
 
 #stampsField img {
-    position: relative !important;
-    float: right;
+  position: relative !important;
+  float: right;
 }
 
 #mainContentField::-webkit-scrollbar {
-    display: none; 
+  display: none;
 }
 
 #mainContentField {
-    position: absolute;
-    top: 7.5vh;
-    left: 23.5vw;
-    height: 90vh;
-    min-height: fit-content;
-    width: 50vw;
-    min-width: fix-content;
-    margin: 15px 15px 0 15px;
-    padding: 10px 25px 0 25px;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
+  position: absolute;
+  top: 7.5vh;
+  left: 23.5vw;
+  height: 90vh;
+  min-height: fit-content;
+  width: 50vw;
+  min-width: fix-content;
+  margin: 15px 15px 0 15px;
+  padding: 10px 25px 0 25px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #topBannerContainerField {
-    position: relative;
-    background-image: url("../../assets/images-main/hangingstars.gif");
-    background-repeat: repeat-x;
-    top: -1.5vh;
-    left: 0;
-    height: 7.25vh;
-    width: 100vw;
-    z-index: 2;
+  position: relative;
+  background-image: url("../../assets/images-main/hangingstars.gif");
+  background-repeat: repeat-x;
+  top: -1.5vh;
+  left: 0;
+  height: 7.25vh;
+  width: 100vw;
+  z-index: 2;
 }
 
 #leftContainerField {
-    position: absolute;
-    top: 8vh;
-    left: 2vw;
-    height: 20vh;
-    min-height: fit-content;
-    width: 10vw;
-    padding: 12px;
+  position: absolute;
+  top: 8vh;
+  left: 2vw;
+  height: 20vh;
+  min-height: fit-content;
+  width: 10vw;
+  padding: 12px;
 }
 
 #counterBox {
-    position: absolute;
-    top: 47vh;
-    left: 78vw;
-    height: 12.5vh;
-    min-height: fit-content;
-    width: 13vw;
-    min-width: fit-content;
-    text-align: center;
-    padding: 5px;
+  position: absolute;
+  top: 47vh;
+  left: 78vw;
+  height: 12.5vh;
+  min-height: fit-content;
+  width: 13vw;
+  min-width: fit-content;
+  text-align: center;
+  padding: 5px;
 }
 
 #bioBox {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    left: 78vw;
-    top: 12.75vh;
-    height: 23.75vh;
-    width: 19vw;
-    padding: 0 !important;
-    box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  left: 78vw;
+  top: 12.75vh;
+  height: 23.75vh;
+  width: 19vw;
+  padding: 0 !important;
+  box-sizing: border-box;
 }
 
 #bioBox > * {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    margin-top: 0.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.5vh;
 }
 
 #bioBox > table {
-    display: table !important;
-    width: 100% !important;
+  display: table !important;
+  width: 100% !important;
 }
 
 #bioBoxImgField {
-    display: flex;
-    height: 40%;
-    width: 80%;
-    margin-top: 1vh;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    background-image: url('../../assets/images-main/img63.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 15px;
-    border: 4px solid #461121;
+  display: flex;
+  height: 40%;
+  width: 80%;
+  margin-top: 1vh;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-image: url("../../assets/images-main/img63.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  border: 4px solid #461121;
 }
 
 #bioBoxImgField > img {
-    max-height: 100%;
-    width: auto;
+  max-height: 100%;
+  width: auto;
 }
 
 table {
-    table-layout: fixed !important;
-    width: 100% !important;
-    border-collapse: separate !important;
+  table-layout: fixed !important;
+  width: 100% !important;
+  border-collapse: separate !important;
 }
 
-
-
 #tableWrapper {
-    height: auto;
-    width: auto;
+  height: auto;
+  width: auto;
 }
 
 td {
-    width: 50% !important;
-    height: auto !important;
-    padding: 2px 2px 2px 30px !important;
-    text-align: start !important;
+  width: 50% !important;
+  height: auto !important;
+  padding: 2px 2px 2px 30px !important;
+  text-align: start !important;
 }
 
-#entryBox {
-    position: relative;
-    text-align: left;
-    height: fit-content;
-    width: 46vw;
-    top: 0;
-    left: 0;
-    padding: 15px;
-    margin: 15px 0 15px;
+.entryBox {
+  position: relative;
+  text-align: left;
+  height: fit-content;
+  width: 46vw;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  margin: 15px 0 15px;
 }
 
 #navBarMainBox {
-    position: relative;
-    top: 5vh;
-    left: 0;
-    height: 60vh;
-    min-height: fit-content;
-    width: 13.5vw;
-    margin: auto;
-    padding: 15px;
+  position: relative;
+  top: 5vh;
+  left: 0;
+  height: 60vh;
+  min-height: fit-content;
+  width: 13.5vw;
+  margin: auto;
+  padding: 15px;
 }
 
 #navBarTopBox {
-    position: relative;
-    display: flex;
-    top: 3vh;
-    left: 0;
-    align-content: center;
-    justify-content: center;
-    height: 7vh;
-    width: 13.5vw;
-    margin: auto;
-    padding: 15px;
-    border-radius: 15px;
-    border: solid 6px #982649;
-    border-radius: 15px;
-    background-color: #ff7e9e;
-    color: #ede8e9;
+  position: relative;
+  display: flex;
+  top: 3vh;
+  left: 0;
+  align-content: center;
+  justify-content: center;
+  height: 7vh;
+  width: 13.5vw;
+  margin: auto;
+  padding: 15px;
+  border-radius: 15px;
+  border: solid 6px #982649;
+  border-radius: 15px;
+  background-color: #ff7e9e;
+  color: #ede8e9;
 }
 
 #navBarTopBox > h1 {
-    font-size: 1.75em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+  font-size: 1.75em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .navBarText {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 #navBarTopField {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 69.5%;
-    width: 100%;
-    text-align: center;
-    padding: 0 0 1vw 0;
-    margin: auto;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    box-sizing: border-box;
-    border-bottom: 3px double #540e23;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 69.5%;
+  width: 100%;
+  text-align: center;
+  padding: 0 0 1vw 0;
+  margin: auto;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  box-sizing: border-box;
+  border-bottom: 3px double #540e23;
 }
 
 #navBarBottomField {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    bottom: 0;
-    left: 0;
-    height: 32.5%;
-    text-align: center;
-    margin: auto;
-    padding: 0 15px 15px 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  height: 32.5%;
+  text-align: center;
+  margin: auto;
+  padding: 0 15px 15px 15px;
 }
 
 #skullBox {
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    left: 18.75vw;;
-    height: 100%;
-    width: 10vw;
-    background-image: url("../../assets/images-main/skull.gif");
-    background-repeat: repeat-y;
-    overflow: hidden;
-    margin: 0 auto 0 auto;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 18.75vw;
+  height: 100%;
+  width: 10vw;
+  background-image: url("../../assets/images-main/skull.gif");
+  background-repeat: repeat-y;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
 }
 
 #guestbookBox {
-    text-decoration: none;
-    margin-top: -2vh;
-    height: fit-content;
+  text-decoration: none;
+  margin-top: -2vh;
+  height: fit-content;
 }
 
 #motorcycle {
-    position: absolute;
-    bottom: 5.5vh;
-    right: 15vw;
-    z-index: 2;
-    height: 31vh;
+  position: absolute;
+  bottom: 5.5vh;
+  right: 15vw;
+  z-index: 2;
+  height: 31vh;
 }
 
 #seinfeldgif2 {
-    position: absolute;
-    bottom: 26vh;
-    right: 15vw;
+  position: absolute;
+  bottom: 26vh;
+  right: 15vw;
 }
 
 #strongbadgif {
-    position: absolute;
-    top: 37.5vh;
-    right: 17vw;
-    height: 75px;
-    width: auto;
-    z-index: 2;
+  position: absolute;
+  top: 37.5vh;
+  right: 17vw;
+  height: 75px;
+  width: auto;
+  z-index: 2;
 }
 
 #corchZ {
-    position: absolute;
-    top: 37.5vh;
-    right: 12vw;
-    height: 75px;
-    width: auto;
-    z-index: 2;
+  position: absolute;
+  top: 37.5vh;
+  right: 12vw;
+  height: 75px;
+  width: auto;
+  z-index: 2;
 }
 
 #tamanotchiBox {
-    position: relative;
-    margin-top: 1vh;
+  position: relative;
+  margin-top: 1vh;
 }
