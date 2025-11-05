@@ -1,0 +1,109 @@
+:root {
+  --text-color-1: #982649;
+  --text-color-2: #420517;
+  --link-color: #2e198c;
+  --visited-link-color: #fac16a;
+  --link-hover-color: #112775;
+
+  --bg-color-1: #ff7e9e;
+  --bg-color-2: #4b8bc7;
+
+  --aux-color-1: #461121;
+}
+
+/* ========================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+body {
+  cursor: url("../../assets/cursors/gam942.gif"), auto;
+  font-family: "Courier New", sans-serif;
+  font-weight: bold;
+  color: var(--text-color-1);
+  background-image: url("../../assets/images-main/cutesharks2.jpg");
+  background-repeat: repeat;
+}
+
+/* ========================================== */
+
+#left-nav {
+  display: flex;
+  flex: 0 0 13vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 1.5em 1.5em 2em 1.5em;
+  min-height: 100vh;
+  min-width: 200px;
+  max-width: 250px;
+  background-color: var(--bg-color-1);
+  border: 4px solid var(--text-color-1);
+  border-radius: 1.2em;
+}
+
+#main-content-field {
+  flex: 1 1 60vw;
+  padding: 18px 2vw;
+  overflow-y: auto;
+  min-width: 320px;
+  max-width: 850px;
+}
+
+#right-side {
+  position: sticky;
+  flex: 0 0 20vw;
+  min-width: 220px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+.nav-header h1 {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0.3em 0 1.2em 0;
+  text-align: center;
+}
+
+.nav-links a:hover {
+  color: var(--link-hover-color, #112775);
+  text-decoration: underline;
+}
+
+.nav-extras {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.nav-extras img {
+  display: block;
+  margin-bottom: 0.3em;
+}

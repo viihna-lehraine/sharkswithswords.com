@@ -15,10 +15,10 @@ body {
     font-family: 'Courier New', sans-serif;
     font-weight: bold;
     color: #0E0E0E;
-    background-image: url("../../assets/backgrounds/space.jpeg");
+    background-image: url("../../assets/images-main/space.gif");
     background-repeat: repeat;
 }
-  
+
 a {
     text-decoration: none;
     color: #74DE6A;

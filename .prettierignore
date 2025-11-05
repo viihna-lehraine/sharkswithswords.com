@@ -1,0 +1,8 @@
+# .prettierignore
+
+*.css
+*.html
+*.md
+*.txt
+*.yaml
+*.yml

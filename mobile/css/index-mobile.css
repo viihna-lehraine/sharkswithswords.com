@@ -15,7 +15,7 @@
 }
 
 body {
-    background-image: url("../../assets/images-main/bg1.png");
+    background-image: url("../../assets/backgrounds/gameBoys.png");
     background-size: cover;
 }
 
@@ -89,11 +89,11 @@ button:hover {
 a:link {
     color: #A7DC44;
 }
-  
+
 a:visited {
     color: #668FAE;
 }
-  
+
 body {
     background-image: url("../../assets/images-main/bg1.png");
     background-repeat: repeat;
@@ -102,7 +102,7 @@ body {
 h1, #header {
     text-align: center;
 }
-  
+
 #header {
     position: absolute;
     top: 3.5vh;
@@ -116,18 +116,18 @@ h1, #header {
     border-radius: 25px;
     overflow: hidden;
 }
-  
+
 #imgresize {
     width: 30vw;
     margin: -2vh 0 2vh 0;
-} 
-  
+}
+
 #container {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%; 
+    width: 100%;
 }
 
 #boxmain {
@@ -147,7 +147,7 @@ h1, #header {
     padding: 2vh 0;
     overflow: display;
 }
-  
+
 #skeletonFireBox {
     position: relative;
     top: 22vh;

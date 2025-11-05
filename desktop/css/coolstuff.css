@@ -2,7 +2,7 @@ body {
     font-family: 'Courier New', monospace, sans-serif;
     font-weight: bold;
     color: #DCDCDD;
-    background-image: url("../../assets/images-main/bg1.png");
+    background-image: url("../../assets/backgrounds/gameBoys.png");
     background-repeat: repeat;
 }
 
@@ -22,7 +22,7 @@ a:link {
     width: 100vw;
 }
 
-#main, #home, #sitemap, #music, #projects, #games, #coolskeletons { 
+#main, #home, #sitemap, #music, #projects, #games, #coolskeletons {
     display: flex;
     font-size: 1.75em;
     border-radius: 75px;
