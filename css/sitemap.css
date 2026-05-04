@@ -32,7 +32,7 @@ a:hover {
 }
 
 body {
-    background-image: url("../assets/images-main/space.gif");
+    background-image: url("../assets/images/space.gif");
     background-repeat: repeat;
     cursor: url("../assets/cursors/gam942.gif"), auto;
 }

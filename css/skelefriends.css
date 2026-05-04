@@ -32,7 +32,7 @@ a:active {
     width: 100vw;
     justify-content: center;
     align-items: last baseline;
-    background-image: url("../assets/images-main/skeleton-guitar.gif");
+    background-image: url("../assets/images/skeleton-guitar.gif");
     background-repeat: repeat;
     background-color: #101415;
 }

@@ -1,8 +1,8 @@
 body {
-    background-image: url("../assets/images-main/space.gif");
+    background-image: url("../assets/images/space.gif");
     background-repeat: repeat;
     color: #0E0E0E;
-    cursor: url("../assets/images-main/gam942.gif"), auto;
+    cursor: url("../assets/images/gam942.gif"), auto;
     font-family: 'Courier New', sans-serif;
     font-weight: bold;
 }
@@ -29,7 +29,7 @@ a:hover {
 }
 
 .top-bar {
-    background-image: url("../assets/images-main/hanging-stars.gif");
+    background-image: url("../assets/images/hanging-stars.gif");
     position: fixed;
     top: 0;
     left: 0;

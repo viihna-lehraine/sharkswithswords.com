@@ -86,7 +86,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url("../assets/images-main/purple-waves.jpg");
+    background-image: url("../assets/images/purple-waves.jpg");
     background-size: cover;
 }
 
@@ -96,7 +96,7 @@ body {
     left: 0;
     height: 4vh;
     width: 100%;
-    background-image: url("../assets/images-main/glossy-hearts.gif");
+    background-image: url("../assets/images/glossy-hearts.gif");
     background-repeat: repeat;
     z-index: 3;
 }

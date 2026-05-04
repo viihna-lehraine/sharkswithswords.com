@@ -30,14 +30,14 @@ a:hover {
 }
 
 body {
-    background-image: url("../assets/images-main/space.gif");
+    background-image: url("../assets/images/space.gif");
     background-repeat: repeat;
     cursor: url("../assets/cursors/gam942.gif"), auto;
 }
 
 .top-bar {
     position: fixed;
-    background-image: url("../assets/images-main/hanging-stars.gif");
+    background-image: url("../assets/images/hanging-stars.gif");
     top: 0;
     left: 0;
     height: 50px;

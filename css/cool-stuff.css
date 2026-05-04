@@ -2,7 +2,7 @@ body {
     font-family: 'Courier New', monospace, sans-serif;
     font-weight: bold;
     color: #DCDCDD;
-    background-image: url("../assets/images-main/bg-1.png");
+    background-image: url("../assets/bg/bg-1.png");
     background-repeat: repeat;
 }
 
