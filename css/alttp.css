@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "ALTTP Reg Font";
+    src: url("../assets/fonts/alttp/ReturnofGanon.ttf") format('truetype');
+}
+
+body {
+    font-family: "ALTTP Reg Font", sans-serif;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/images-main/clouds-1.jpg");
+    background-size: cover;
+}
+
+#top-container {
+    position: relative;
+    display: flex;
+    top: 0;
+    height: 19vh;
+    width: 100vw;
+    justify-content: stretch;
+    align-items: stretch;
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+    background-image: url("../assets/images-main/white-bricks.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    border-bottom: 10px ridge #90ceda;
+    z-index: 2;
+}
+
+#left-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 20vw;
+    box-sizing: border-box;
+}
+
+#right-container {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 20vw;
+    box-sizing: border-box;
+}
+
+#main-container {
+    position: absolute;
+    top: 23vh;
+    left: 20vw;
+    height: 100vh;
+    width: 60vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+#bottom-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    bottom: 0;
+    left: 0;
+    height: 6vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: #87ceeb;
+    box-sizing: border-box;
+    border-top: 5px inset #1d223e;
+}
+
+#main-container-content-box {
+    position: relative;
+    font-size: 1.35em;
+    height: 62vh;
+    width: 55vw;
+    min-width: fit-content;
+    background-color: #87ceeb;
+    box-sizing: border-box;
+    border: 5px inset #1d223e;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+#stupid-fucking-box-i-hate {
+    position: relative;
+    height: 99.9%;
+    width: 98%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    box-sizing: border-box;
+}
+
+#stupid-fucking-box-i-hate p:first-of-type {
+    margin-top: 0;
+}
+
+.top-container-dropdown-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+#main-container-content-field {
+    box-sizing: border-box;
+}
+
+#top-container-banner-box {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    background-color: purple;
+    border-left: 9px ridge #90ceda;
+    border-right: 9px ridge #90ceda;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: auto;
+}
+
+#top-container-banner-box-img {
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.dropdown-button {
+    background-color: #87ceeb;
+    color: #161b38;
+    padding: 16px;
+    font-family: "ALTTP Reg Font", sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: #a8aed4;
+    cursor: pointer;
+    height: auto;
+    border: 10px ridge #90ceda;
+    border-radius: 10px;
+    margin-top: -3vh;
+}
+  
+.dropdown-button:hover, .dropdown-button:focus {
+    background-color: #2980B9;
+}
+  
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 15vh;
+    left: 9vw;
+    z-index: 2;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.show {
+    display: block;
+}
+
+#image-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}

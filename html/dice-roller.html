@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dice Roller</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+        <link rel="stylesheet" href="../css/dice-roller.css">
+        <link rel="manifest" href="../site.webmanifest">
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    </head>
+    <body>
+        <div id="container">
+            <div id="top">
+                <div id="page-title">
+                    <h1>Dice Roller</h1>
+                </div>
+            </div><br>
+            <div id="center">
+                <div id="blank-row"></div>
+                <div class="content-row">
+                    <div class="content">
+                        <label id="dice-number-label">How many <b>dice</b>?</label>
+                        <input type="text" id="how-many-dice-input"><br><br>
+                        <label id="dice-side-nmber-label">How many <b>sides</b>?</label>
+                        <input type="text" id="how-many-sides-input"><br><br>
+                        <label id="dice-modifier=label-add-subtract">Add a <b>modifier</b> to the total <em>(can be 0)</em></label>
+                        <input type="text" id="dice-modifier-input-add-subtract"><br><br>
+                        <label id="dice-modifier-label-2">Multiply by a <b>modifier</b>?</label>
+                        <input type="text" id="dice-modifier-input-multiply"><br><br>
+                        <button type="text" id="submit-button-dice">submit</button>
+                        <button type=text" id="reset-button-dice">reset</button>
+                        <button type="text" id="reset-input-fields-dice">clear</button><br><br>
+                        <label id="dice-result-total">Result (Total): </label><br><br>
+                        <label id="dice-result-individual">Result (Individual Dice): </label>
+                    </div>
+                </div>
+            </div>
+            <div id="right"></div>
+            <br><br><br><br><br><br><br>
+            <div id="bottomBarUpper">
+                <p>
+                    <a href="./main.html">Main Page</a> | <a href="./sitemap.html">Sitemap</a> | <a href="./projects.html">Main Projects Page</a>
+                </p><br>
+            </div>
+            <div id="bottomBar">
+                <p>©2024-2026 Melody (Voidfucker) | <a href="./contact.html">Contact Info</a></p>
+            </div>
+        </div>
+        <script src="../js/dice-roller.js"></script>
+    </body>
+</html>

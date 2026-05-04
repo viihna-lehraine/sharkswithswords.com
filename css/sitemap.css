@@ -1,0 +1,85 @@
+body {
+    font-family: 'Courier New', sans-serif;
+    font-weight: bold;
+    color: #0E0E0E;
+}
+
+a {
+    text-decoration: none;
+    color: #74DE6A;
+}
+
+a:visited {
+    color: #6A9ADD;
+}
+  
+a:hover {
+    cursor: url("../assets/cursors/gam945.gif"), auto;
+}
+
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: url("../assets/images-main/space.gif");
+    background-repeat: repeat;
+    cursor: url("../assets/cursors/gam942.gif"), auto;
+}
+
+.sitemap-box {
+    position: relative;
+    background-color: #a51970;
+    border: solid 4px #78AEFA;
+    border-radius: 15px 15px 15px 15px;
+    margin: 10vh auto 10vh auto;
+    height: fit-content;
+    width: 75vw;
+    text-align: center;
+}
+
+.title-text {
+    border-bottom: solid 3px #78AEFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+.directory-title-field {
+    border-bottom: solid 3px #78AEFA;
+}
+
+.main-text {
+    border-bottom: solid 3px #78AEFA;
+    padding: 2vh 0 2vh 0;
+}
+
+#bottom-bar {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    height: 6vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #a51970;
+    border-top: solid 4px #78AEFA;
+    z-index: 2;
+}
