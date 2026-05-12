@@ -8,7 +8,7 @@ var xhttp = new XMLHttpRequest();
                   num_str += num_arr[i];
                   if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
                 }
-                document.getElementById("hitcount").innerHTML = num_str;
+                document.getElementById("hit-count").innerHTML = num_str;
               }
             };
             xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=sharkswithswords", true);
